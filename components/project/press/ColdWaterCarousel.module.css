@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 48vw;
+  overflow-x: visible;
+}
+
+.logoContainer {
+  width: 24vw;
+  height: 24vw;
+  border: 1px solid #fd5d50;
+  border-right: none;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.davidReviewsContainer {
+  position: relative;
+  width: 10vw;
+  height: 10vw;
+}
+
+.littleBlackBookContainer {
+  position: relative;
+  width: 18vw;
+  height: 8vw;
+}
+
+.adsOfTheWorldContainer {
+  position: relative;
+  width: 20vw;
+  height: 4vw;
+}
+
+.marcommNewsContainer {
+  position: relative;
+  width: 20vw;
+  height: 6vw;
+}

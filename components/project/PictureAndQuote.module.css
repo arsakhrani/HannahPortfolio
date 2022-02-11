@@ -1,0 +1,18 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  right: 1.6rem;
+  background-color: #f3f1ed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pictureContainer {
+  position: relative;
+  height: 100vh;
+}
+
+.quoteContainer {
+  font-size: 3.6rem;
+}

@@ -1,0 +1,69 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  right: 1.6rem;
+}
+
+.scrollableArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+.headingContainer {
+  height: 57vh;
+  font-size: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickToViewContainer {
+  position: absolute;
+  right: 45.3vw;
+  height: 5vw;
+  width: 5vw;
+  background-color: #fd5d50;
+  color: white;
+  border-radius: 100%;
+  transform: rotate(-22deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.carouselContainer {
+  height: 57vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.scrollerContainer {
+  height: 43vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.scrollBarHolder {
+  height: 6px;
+  width: 80%;
+  border: 1px solid #fd5d50;
+  border-radius: 5px;
+}
+
+.scrollBar {
+  height: 100%;
+  width: 10%;
+  background-color: #fd5d50;
+  cursor: grab;
+}
+
+.scrollBar:active {
+  cursor: grabbing;
+}

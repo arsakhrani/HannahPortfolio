@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  right: 1.6rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3f1ed;
+}
+
+.imageOne {
+  position: absolute;
+  left: 2rem;
+  top: 6rem;
+}
+
+.imageTwo {
+  position: absolute;
+  bottom: -2rem;
+}
+
+.imageThree {
+  position: absolute;
+}
+
+.imageFour {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
