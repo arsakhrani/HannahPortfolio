@@ -1,20 +1,22 @@
 import Image from "next/image";
 import { useState } from "react";
-import styles from "./Details.module.css";
-import DetailsText from "./DetailsText";
+import styles from "./ContactDetails.module.css";
+import ContactDetailsText from "./ContactDetailsText";
 
-export default function Details({ project, wholey }) {
-  const [textToShow, setTextToShow] = useState("brief");
+export default function ContactDetails() {
+  const [textToShow, setTextToShow] = useState("email");
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>{project.title}</h1>
+      <h1 className={styles.title}>CONTACT</h1>
       <div className={styles.gridContainer}>
-        <p className={styles.companyText}>{project.company}</p>
+        <p className={styles.companyText}>
+          Drop me something catchy with an emoji via...
+        </p>
         <div className={styles.linkContainer}>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("brief")}
+              onClick={() => setTextToShow("email")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -24,16 +26,16 @@ export default function Details({ project, wholey }) {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "brief" && "#FD5D50" }}
+                style={{ color: textToShow === "email" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                {!wholey ? "BRIEF" : "WHOLEY WHO?"}
+                EMAIL
               </span>
             </span>
           </div>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("idea")}
+              onClick={() => setTextToShow("mobile")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -43,16 +45,16 @@ export default function Details({ project, wholey }) {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "idea" && "#FD5D50" }}
+                style={{ color: textToShow === "mobile" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                {!wholey ? "IDEA" : "ROLE"}
+                MOBILE
               </span>
             </span>
           </div>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("success")}
+              onClick={() => setTextToShow("instagram")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -62,16 +64,16 @@ export default function Details({ project, wholey }) {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "success" && "#FD5D50" }}
+                style={{ color: textToShow === "instagram" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                {!wholey ? "SUCCESS" : "SOCIAL MEDIA"}
+                INSTAGRAM
               </span>
             </span>
           </div>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("role")}
+              onClick={() => setTextToShow("linkedin")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -81,15 +83,15 @@ export default function Details({ project, wholey }) {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "role" && "#FD5D50" }}
+                style={{ color: textToShow === "linkedin" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                {!wholey ? "ROLE" : "DESIGN"}
+                LINKEDIN
               </span>
             </span>
           </div>
         </div>
-        <DetailsText project={project} textType={textToShow} />
+        <ContactDetailsText textType={textToShow} />
       </div>
     </div>
   );

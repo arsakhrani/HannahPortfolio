@@ -14,7 +14,11 @@ export default function PictureAndQuote() {
         />
       </div>
       <div className={styles.quoteContainer}>
-        <h1>"Insert Quote Here"</h1>
+        <h1
+          className={styles.quote}
+        >{`Honest, poignant and thought provoking"`}</h1>
+        <h4 className={styles.subText}>Daniel Howell</h4>
+        <h4 className={styles.subText}>Youtuber</h4>
       </div>
     </div>
   );

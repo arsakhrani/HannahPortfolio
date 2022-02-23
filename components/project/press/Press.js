@@ -2,9 +2,12 @@ import { useState } from "react";
 import ColdWaterCarousel from "./ColdWaterCarousel";
 import ColorfulLifeCarousel from "./ColorfulLifeCarousel";
 import FiveYearOldSelfieCarousel from "./FiveYearOldSelfieCarousel";
+import IssWieDuBistCarousel from "./IssWieDuBistCarousel";
+import OwnGoodFoodCarousel from "./OwnGoodFoodCarousel";
+import GoodMorningsCarousel from "./GoodMorningsCarousel";
 import styles from "./Press.module.css";
 
-export default function Press({ projectName }) {
+export default function Press({ about, projectName }) {
   const [scrollBarPosition, setScrollBarPosition] = useState(0);
   const [isScrollActive, setIsScrollActive] = useState(false);
 
@@ -32,7 +35,7 @@ export default function Press({ projectName }) {
         className={styles.scrollableArea}
       >
         <div className={styles.headingContainer}>
-          <h2>PRESS</h2>
+          <h2>{about ? "EXPERIENCE" : "PRESS"}</h2>
           <div className={styles.clickToViewContainer}>
             <p style={{ textAlign: "center" }}>click to view</p>
           </div>
@@ -41,6 +44,9 @@ export default function Press({ projectName }) {
           {projectName === "cold water" && <ColdWaterCarousel />}
           {projectName === "colorful life" && <ColorfulLifeCarousel />}
           {projectName === "selfie" && <FiveYearOldSelfieCarousel />}
+          {projectName === "iss wie du bist" && <IssWieDuBistCarousel />}
+          {projectName === "own good food" && <OwnGoodFoodCarousel />}
+          {projectName === "good mornings" && <GoodMorningsCarousel />}
         </div>
       </div>
       <div className={styles.scrollerContainer}>

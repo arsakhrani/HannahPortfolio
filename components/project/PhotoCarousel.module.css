@@ -1,0 +1,66 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  right: 1.6rem;
+  background-color: #f3f1ed;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.headerContainer {
+  align-self: center;
+  padding-left: 4rem;
+  font-size: 2rem;
+}
+
+.galleryContainer {
+  align-self: center;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: visible;
+  padding-left: 4rem;
+  transition: all 0.5s linear;
+}
+
+.imageContainer {
+  position: relative;
+  width: 22vw;
+  height: 22vw;
+  margin-right: 4rem;
+}
+
+.scrollBarContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.scrollBarHolder {
+  height: 6px;
+  width: 80%;
+  border: 1px solid #fd5d50;
+  border-radius: 5px;
+}
+
+.scrollBar {
+  height: 100%;
+  width: 10%;
+  background-color: #fd5d50;
+  cursor: grab;
+}
+
+.scrollBar:active {
+  cursor: grabbing;
+}
+
+.followMeContainer {
+  position: absolute;
+  bottom: 1rem;
+  left: 4rem;
+  display: inline;
+  border-bottom: 2px solid #fd5d50;
+  cursor: pointer;
+}

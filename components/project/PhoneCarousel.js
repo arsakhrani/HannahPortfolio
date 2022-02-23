@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./PhoneCarousel.module.css";
 
-export default function PhoneCarousel() {
+export default function PhoneCarousel({ selfie }) {
   const [scrollBarPosition, setScrollBarPosition] = useState(0);
   const [isScrollActive, setIsScrollActive] = useState(false);
   const [viewWidth, setViewWidth] = useState(0);
@@ -42,7 +42,9 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978902/5-year-old-selfie/MockUp_IphoneOutline_08_cidqsy.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978902/5-year-old-selfie/MockUp_IphoneOutline_08_cidqsy.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979213/every-val-day/_Reduced/01_MockUp_GrahamRobertson_01_caerbm.jpg"
             }
           />
         </div>
@@ -54,7 +56,9 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978892/5-year-old-selfie/MockUp_IphoneOutline_10_qlwha3.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978892/5-year-old-selfie/MockUp_IphoneOutline_10_qlwha3.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979216/every-val-day/_Reduced/02_MockUp_MariaSkarlatou_01_zpm9ha.jpg"
             }
           />
         </div>
@@ -66,7 +70,9 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978902/5-year-old-selfie/MockUp_IphoneOutline_09_hwixwq.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978902/5-year-old-selfie/MockUp_IphoneOutline_09_hwixwq.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979214/every-val-day/_Reduced/03_MockUp_ThomasHEdger_01_ql0c16.jpg"
             }
           />
         </div>
@@ -78,7 +84,9 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978903/5-year-old-selfie/MockUp_IphoneOutline_12_yhr6eh.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978903/5-year-old-selfie/MockUp_IphoneOutline_12_yhr6eh.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979219/every-val-day/_Reduced/09_MockUp_JonathonGibbs_01_qas6ku.jpg"
             }
           />
         </div>
@@ -90,7 +98,9 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978899/5-year-old-selfie/MockUp_IphoneOutline_11_pj5u4x.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978899/5-year-old-selfie/MockUp_IphoneOutline_11_pj5u4x.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979215/every-val-day/_Reduced/07MockUp_Phillip_Harris_01_z4w65a.jpg"
             }
           />
         </div>
@@ -102,7 +112,9 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978893/5-year-old-selfie/MockUp_IphoneOutline_05_zxxnr4.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978893/5-year-old-selfie/MockUp_IphoneOutline_05_zxxnr4.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979212/every-val-day/_Reduced/08_MockUp_GeorgeMorton_01_rhentx.jpg"
             }
           />
         </div>
@@ -114,7 +126,9 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978891/5-year-old-selfie/MockUp_IphoneOutline_03_eunngj.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978891/5-year-old-selfie/MockUp_IphoneOutline_03_eunngj.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979211/every-val-day/_Reduced/05_MockUp_ASOSGirl_01_nxkisd.jpg"
             }
           />
         </div>
@@ -126,7 +140,9 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978891/5-year-old-selfie/MockUp_IphoneOutline_06_r9ib1y.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978891/5-year-old-selfie/MockUp_IphoneOutline_06_r9ib1y.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979211/every-val-day/_Reduced/06_MockUp_KieraBerry_01_h0nejq.jpg"
             }
           />
         </div>
@@ -138,22 +154,26 @@ export default function PhoneCarousel() {
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978885/5-year-old-selfie/MockUp_IphoneOutline_02_snqmnt.png"
+              selfie
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643978885/5-year-old-selfie/MockUp_IphoneOutline_02_snqmnt.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1643979210/every-val-day/_Reduced/04_MockUp_CatherinePearson_01_rqo61v.jpg"
             }
           />
         </div>
-        <div
-          style={{ right: viewWidth * 3.71 }}
-          className={styles.imageContainer}
-        >
-          <Image
-            layout={"fill"}
-            alt={"mock-up picture on phone"}
-            src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643978883/5-year-old-selfie/MockUp_IphoneOutline_04_l552mh.png"
-            }
-          />
-        </div>
+        {selfie && (
+          <div
+            style={{ right: viewWidth * 3.71 }}
+            className={styles.imageContainer}
+          >
+            <Image
+              layout={"fill"}
+              alt={"mock-up picture on phone"}
+              src={
+                "https://res.cloudinary.com/daolun2ab/image/upload/v1643978883/5-year-old-selfie/MockUp_IphoneOutline_04_l552mh.png"
+              }
+            />
+          </div>
+        )}
       </div>
       <div className={styles.scrollerContainer}>
         <div className={styles.scrollBarHolder}>

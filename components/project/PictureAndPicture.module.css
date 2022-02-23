@@ -1,0 +1,21 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  right: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bigPictureContainer {
+  position: relative;
+  height: 100vh;
+}
+
+.smallPictureContainer {
+  position: relative;
+  height: 20vw;
+  width: 20vw;
+  align-self: center;
+  justify-self: center;
+}

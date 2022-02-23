@@ -1,20 +1,22 @@
 import Image from "next/image";
 import { useState } from "react";
-import styles from "./Details.module.css";
-import DetailsText from "./DetailsText";
+import styles from "./PhotographyDetails.module.css";
+import PhotographyDetailsText from "./PhotographyDetailsText";
 
-export default function Details({ project, wholey }) {
-  const [textToShow, setTextToShow] = useState("brief");
+export default function PhotographyDetails() {
+  const [textToShow, setTextToShow] = useState("personal");
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>{project.title}</h1>
+      <h1 className={styles.title}>PHOTOGRAPHY</h1>
       <div className={styles.gridContainer}>
-        <p className={styles.companyText}>{project.company}</p>
+        <p className={styles.companyText}>
+          Creative Lead & Art Director based between Berlin & London
+        </p>
         <div className={styles.linkContainer}>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("brief")}
+              onClick={() => setTextToShow("personal")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -24,16 +26,16 @@ export default function Details({ project, wholey }) {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "brief" && "#FD5D50" }}
+                style={{ color: textToShow === "personal" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                {!wholey ? "BRIEF" : "WHOLEY WHO?"}
+                PERSONAL BIO
               </span>
             </span>
           </div>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("idea")}
+              onClick={() => setTextToShow("experience")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -43,16 +45,16 @@ export default function Details({ project, wholey }) {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "idea" && "#FD5D50" }}
+                style={{ color: textToShow === "experience" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                {!wholey ? "IDEA" : "ROLE"}
+                EXPERIENCE
               </span>
             </span>
           </div>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("success")}
+              onClick={() => setTextToShow("location")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -62,34 +64,15 @@ export default function Details({ project, wholey }) {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "success" && "#FD5D50" }}
+                style={{ color: textToShow === "location" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                {!wholey ? "SUCCESS" : "SOCIAL MEDIA"}
-              </span>
-            </span>
-          </div>
-          <div className={styles.link}>
-            <span
-              onClick={() => setTextToShow("role")}
-              style={{ cursor: "pointer" }}
-            >
-              <Image
-                src={"/assets/icons/bullet.svg"}
-                alt={"bullet-point"}
-                height={15}
-                width={15}
-              />
-              <span
-                style={{ color: textToShow === "role" && "#FD5D50" }}
-                className={styles.linkText}
-              >
-                {!wholey ? "ROLE" : "DESIGN"}
+                LOCATION
               </span>
             </span>
           </div>
         </div>
-        <DetailsText project={project} textType={textToShow} />
+        <PhotographyDetailsText textType={textToShow} />
       </div>
     </div>
   );

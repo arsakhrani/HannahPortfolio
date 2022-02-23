@@ -142,6 +142,10 @@ const projects = [
     url: "every-valentines-day",
     bannerImage:
       "https://res.cloudinary.com/daolun2ab/image/upload/v1643912252/every-val-day/Header_Image_q8bmgc.jpg",
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1643992862/5-year-old-selfie/5yearoldselfieV3_tppfrv.mp4",
+    fullViewPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912252/every-val-day/Header_Image_q8bmgc.jpg",
     brief: {
       textOne:
         "I started the journey with YoungMinds at a Facebook Hack-a-thon event - With instant chemistry, my creative partner and I approached them for a pro-bono briefing, which ended up being an extension of the initial brief.",
@@ -178,7 +182,13 @@ const projects = [
     company: "Crowd Farming",
     url: "iss-wie-du-bist",
     bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912418/iss-wie-du-bist/Photo_Collage_04_wot7fn.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979274/iss-wie-du-bist/Photo_Collage_03_ubod5i.jpg",
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1643991748/a-colorful-life/A_Colourful_Life_1_gqspz3.mp4",
+    bigPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979293/iss-wie-du-bist/Crowd_Farming_Header_Left_epftto.jpg",
+    smallPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979392/iss-wie-du-bist/Crowd_Farming_Header_Right_hzjudc.jpg",
     brief: {
       textOne:
         "I started the journey with YoungMinds at a Facebook Hack-a-thon event - With instant chemistry, my creative partner and I approached them for a pro-bono briefing, which ended up being an extension of the initial brief.",
@@ -208,6 +218,16 @@ const projects = [
         "This campaign had zero budget, and technically required zero assets - therefore zero cost, however I wanted to give the charity something to share on their channels to promote the campaign - so I created a short film that explained the idea simply for participants to understand. ",
       textThree:
         "Once again, storyboarding, sourcing and editing the final film itself.",
+    },
+    collageImages: {
+      urlOne:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1643979842/iss-wie-du-bist/Photo_Collage_01_wtqvjb.jpg",
+      urlTwo:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1643979274/iss-wie-du-bist/Photo_Collage_03_ubod5i.jpg",
+      urlThree:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1643979442/iss-wie-du-bist/Photo_Collage_02_sqbfqn.jpg",
+      urlFour:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1643912418/iss-wie-du-bist/Photo_Collage_04_wot7fn.jpg",
     },
   },
   {
@@ -248,11 +268,17 @@ const projects = [
     },
   },
   {
-    title: "5 YEAR OLD SELFIE",
-    company: "Young Minds",
-    url: "5-year-old-selfie",
+    title: "OWN GOOD FOOD",
+    company: "Beets & Roots",
+    url: "own-good-food",
     bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643907874/5-year-old-selfie/Image_01_hb97u2.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1644137442/own%20good%20food/_GIF%20on%20Left/02_2021_08_beets_roots_25_Tom_Wideangle_218_pkjdkq.jpg",
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1645525374/own%20good%20food/TM210901PR1600_Beets_Roots_NoCarbon_v19_z8mbsm.mp4",
+    bigPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1644137442/own%20good%20food/_GIF%20on%20Left/01_2021_08_beets_roots_25_Tom_Wideangle_043_cmpaju.jpg",
+    smallPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1644137445/own%20good%20food/_Slider%20in%20middle%20of%20page/01_2021_08_beets_roots_29_Veg.Chicken_Bowl_Closeup_025_qjxawy.jpg",
     brief: {
       textOne:
         "I started the journey with YoungMinds at a Facebook Hack-a-thon event - With instant chemistry, my creative partner and I approached them for a pro-bono briefing, which ended up being an extension of the initial brief.",
@@ -283,11 +309,23 @@ const projects = [
       textThree:
         "Once again, storyboarding, sourcing and editing the final film itself.",
     },
+    collageImages: {
+      urlOne:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1644138827/own%20good%20food/_Other%20photos/2021_08_beets_roots_07_Wide3_585_opkyrl.jpg",
+      urlTwo:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1644138826/own%20good%20food/_Other%20photos/2021_08_beets_roots_04_PickUp_405_bwdze9.jpg",
+      urlThree:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1644138827/own%20good%20food/_Other%20photos/2021_08_beets_roots_21_FetaBowl_071_hl7oip.jpg",
+      urlFour:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1644138827/own%20good%20food/_Other%20photos/2021_08_beets_roots_30_Deconstructed2_0085_awhj6c.jpg",
+    },
   },
   {
-    title: "5 YEAR OLD SELFIE",
-    company: "Young Minds",
-    url: "5-year-old-selfie",
+    title: "CORONA PERSONA",
+    company: "Midi",
+    url: "corona-persona",
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1645462088/Midi%20Corona%20Persona/Website_220221_skipt9.mov",
     bannerImage:
       "https://res.cloudinary.com/daolun2ab/image/upload/v1643907874/5-year-old-selfie/Image_01_hb97u2.jpg",
     brief: {
