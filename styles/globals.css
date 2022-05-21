@@ -3,7 +3,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Outfit", sans-serif;
-  overflow-x: hidden;
 }
 
 body {
@@ -36,4 +35,9 @@ p {
 
 * {
   box-sizing: border-box;
+}
+
+#good-morning-success a {
+  font-family: "Outfit", sans-serif;
+  text-decoration: underline;
 }

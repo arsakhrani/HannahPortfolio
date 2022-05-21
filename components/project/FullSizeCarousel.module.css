@@ -1,12 +1,14 @@
 .outerContainer {
   position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  position: relative;
+  right: 1.6rem;
 }
 
 .container {
   height: 100vh;
   width: 100vw;
-  position: relative;
-  right: 1.6rem;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: visible;
@@ -26,7 +28,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent 0%, black 200%);
+  background: linear-gradient(to bottom, transparent 0%, black 400%);
 }
 
 .dotContainer {
@@ -45,4 +47,12 @@
   background-color: #fd5d50;
   opacity: 0.6;
   cursor: pointer;
+}
+
+.titleText {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  bottom: 2em;
+  left: 1em;
 }

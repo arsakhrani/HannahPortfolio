@@ -1,14 +1,53 @@
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import styles from "./Footer.module.css";
 
-export default function Footer() {
+export default function Footer({ projectPage, detailsArea }) {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMouseOver, setIsMouseOver] = useState(false);
+
+  useEffect(() => {
+    const scrollEvent = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    projectPage && window.addEventListener("scroll", scrollEvent);
+    return () => {
+      projectPage && window.removeEventListener("scroll", scrollEvent);
+    };
+  }, [projectPage]);
+
   return (
-    <footer className={styles.container}>
+    <footer
+      onMouseEnter={() => setIsMouseOver(true)}
+      onMouseLeave={() => setIsMouseOver(false)}
+      style={{
+        opacity:
+          (!isScrolled && detailsArea) ||
+          (isScrolled && isMouseOver && !detailsArea)
+            ? 1
+            : 0,
+        zIndex: isScrolled && isMouseOver && 2,
+      }}
+      className={styles.container}
+    >
       <Link href="/about">
-        <a>About</a>
+        <a className={styles.changeColor}>About</a>
       </Link>
       <Link href="/photography">
-        <a>CV</a>
+        <a
+          className={styles.changeColor}
+          target="_blank"
+          rel="noreferrer"
+          href="https://res.cloudinary.com/daolun2ab/image/upload/fl_attachment:Hannah_Cunningham_cv/v1649421102/220208_Hannah_CV_V02_bkgsex.pdf"
+          download
+        >
+          CV
+        </a>
       </Link>
     </footer>
   );

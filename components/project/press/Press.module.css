@@ -3,6 +3,7 @@
   width: 100vw;
   position: relative;
   right: 1.6rem;
+  overflow-x: hidden;
 }
 
 .scrollableArea {
@@ -47,7 +48,7 @@
   height: 43vh;
   display: flex;
   justify-content: center;
-  margin-top: 6rem;
+  padding-top: 6rem;
 }
 
 .scrollBarHolder {

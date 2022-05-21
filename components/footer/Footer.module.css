@@ -4,4 +4,17 @@
   justify-content: space-between;
   font-size: 1.4rem;
   padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  transition: all linear 0.3s;
+}
+
+.changeColor:hover {
+  color: #fd5d50;
+}
+
+.changeColor {
+  transition: all linear 0.15s;
 }

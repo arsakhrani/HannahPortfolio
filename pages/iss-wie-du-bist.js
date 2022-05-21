@@ -10,13 +10,14 @@ export default function issWieDuBist() {
   return (
     <div>
       <Details project={projects[4]} />
+      <Footer projectPage={true} detailsArea={true} />
       <Footer />
       <VideoPlayer url={projects[4].videoUrl} />
       <PictureAndPicture
         bigPicture={projects[4].bigPicture}
         smallPicture={projects[4].smallPicture}
       />
-      <Collage images={projects[4].collageImages} />
+      <Collage project="iss wie du bist" images={projects[4].collageImages} />
       <Press projectName={"iss wie du bist"} />
     </div>
   );

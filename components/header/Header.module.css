@@ -5,3 +5,11 @@
   font-size: 1.4rem;
   margin-bottom: 0.5em;
 }
+
+.changeColor:hover {
+  color: #fd5d50;
+}
+
+.changeColor {
+  transition: all linear 0.15s;
+}

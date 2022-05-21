@@ -7,7 +7,7 @@ export default function VideoPlayer({ url }) {
   return (
     <div className={styles.container}>
       <video
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", cursor: "pointer" }}
         onMouseOver={() => setShowControls(true)}
         onMouseLeave={() => setShowControls(false)}
         controls={showControls}

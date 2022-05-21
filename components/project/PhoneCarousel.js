@@ -39,6 +39,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -53,6 +54,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -67,6 +69,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -81,6 +84,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -95,6 +99,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -109,6 +114,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -123,6 +129,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -137,6 +144,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -151,6 +159,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
             src={
@@ -166,6 +175,7 @@ export default function PhoneCarousel({ selfie }) {
             className={styles.imageContainer}
           >
             <Image
+              draggable={false}
               layout={"fill"}
               alt={"mock-up picture on phone"}
               src={

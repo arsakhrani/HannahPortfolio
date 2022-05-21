@@ -10,12 +10,15 @@ export default function aColorfulLife() {
   return (
     <div>
       <Details project={projects[2]} />
-      <Footer />
-      <VideoPlayer url={projects[2].videoUrl} />
-      <FullViewPicture url={projects[2].fullViewPicture} />
-      <FullViewPicture url={projects[2].fullViewPictureTwo} />
-      <Collage images={projects[2].collageImages} />
-      <Press projectName={"colorful life"} />
+      <Footer projectPage={true} detailsArea={true} />
+      <div>
+        <VideoPlayer url={projects[2].videoUrl} />
+        <FullViewPicture url={projects[2].fullViewPicture} />
+        <FullViewPicture url={projects[2].fullViewPictureTwo} />
+        <Collage project="colorful life" images={projects[2].collageImages} />
+        <Press projectName={"colorful life"} />
+        <Footer projectPage={true} />
+      </div>
     </div>
   );
 }

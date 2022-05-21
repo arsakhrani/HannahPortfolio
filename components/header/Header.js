@@ -5,10 +5,11 @@ export default function Header() {
   return (
     <header className={styles.container}>
       <Link href="/contact">
-        <a>Contact</a>
+        <a className={styles.changeColor}>Contact</a>
       </Link>
+      <Link href="/">HannaH</Link>
       <Link href="/photography">
-        <a>Photography</a>
+        <a className={styles.changeColor}>Photography</a>
       </Link>
     </header>
   );

@@ -1,9 +1,10 @@
 .container {
   padding: 3rem 3rem;
+  min-height: 92vh;
 }
 
 .title {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
 }
 
 .gridContainer {

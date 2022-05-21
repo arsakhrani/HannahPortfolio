@@ -8,17 +8,17 @@
 
 .imageOne {
   position: absolute;
-  left: 2rem;
-  top: 6rem;
+  z-index: 1;
 }
 
 .imageTwo {
   position: absolute;
-  bottom: -2rem;
+  z-index: 1;
 }
 
 .imageThree {
   position: absolute;
+  z-index: 0;
 }
 
 .imageFour {

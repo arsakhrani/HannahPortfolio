@@ -7,7 +7,6 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [position, setPosition] = useState(-1);
-  const [showcasePosition, setShowcasePosition] = useState(-100);
 
   const showcaseCount = projects.length;
 
@@ -20,26 +19,9 @@ export default function Home() {
     } else {
       setPosition(mousePosition);
     }
-
-    const index = Math.round(position * (showcaseCount - 1));
-
-    const cardGap = 100;
-    const cardWidth = window.innerHeight * 0.45;
-    const padding = 20;
-    const edge = 400;
-    const g =
-      (cardGap * (showcaseCount - 1) +
-        cardWidth -
-        window.innerWidth +
-        padding * 2 +
-        edge * 2) /
-      (showcaseCount - 1);
-    const offset = edge - index * g;
-    setShowcasePosition(showcasePosition + (offset - showcasePosition) / 20);
   };
 
-  const index = Math.round(position * showcaseCount);
-  console.log(index);
+  const index = Math.round((position * showcaseCount) / 0.8);
 
   return (
     <div>
@@ -47,20 +29,18 @@ export default function Home() {
         <Head>
           <title>Hannah</title>
         </Head>
-        <div
-          className={styles.showCase}
-          style={{ transform: `translate(${showcasePosition}px, 0px)` }}
-          onMouseMove={(e) => changePosition(e)}
-        >
-          {projects.map((project, i) => (
-            <div
-              style={{ left: 150 * i, zIndex: 100 + i }}
-              className={i + 1 > index ? styles.cardPush : styles.card}
-              key={i}
-            >
-              <Card project={project} />
-            </div>
-          ))}
+        <div onMouseMove={(e) => changePosition(e)} className={styles.showCase}>
+          <div className={styles.showCase}>
+            {projects.map((project, i) => (
+              <div
+                style={{ left: 150 * i, zIndex: 100 + i }}
+                className={i + 1 > index ? styles.cardPush : styles.card}
+                key={i}
+              >
+                <Card project={project} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <Footer />

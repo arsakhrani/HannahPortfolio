@@ -14,8 +14,26 @@
 
 .smallPictureContainer {
   position: relative;
-  height: 20vw;
-  width: 20vw;
+  height: 30vw;
+  width: 30vw;
   align-self: center;
   justify-self: center;
+}
+
+.dotContainer {
+  position: absolute;
+  width: 4em;
+  display: flex;
+  justify-content: space-between;
+  bottom: 6em;
+  right: 9em;
+}
+
+.dot {
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 100%;
+  background-color: #fd5d50;
+  opacity: 0.6;
+  cursor: pointer;
 }

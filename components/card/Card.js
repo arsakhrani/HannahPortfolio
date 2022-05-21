@@ -11,6 +11,7 @@ export default function Card({ project }) {
             layout={"fill"}
             alt={`${project.title} image`}
             src={project.bannerImage}
+            objectFit={"cover"}
           />
         </div>
         <div className={styles.textContainer}>

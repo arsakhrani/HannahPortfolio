@@ -10,14 +10,18 @@ export default function ownGoodFood() {
   return (
     <div>
       <Details project={projects[6]} />
-      <Footer />
-      <VideoPlayer url={projects[6].videoUrl} />
-      <PictureAndPicture
-        bigPicture={projects[6].bigPicture}
-        smallPicture={projects[6].smallPicture}
-      />
-      <Collage images={projects[6].collageImages} />
-      <Press projectName={"own good food"} />
+      <Footer projectPage={true} detailsArea={true} />
+      <div>
+        <VideoPlayer url={projects[6].videoUrl} />
+        <PictureAndPicture
+          ownGoodFood={true}
+          bigPicture={projects[6].bigPicture}
+          smallPicture={projects[6].smallPicture}
+        />
+        <Collage project={"own good food"} images={projects[6].collageImages} />
+        <Press projectName={"own good food"} />
+        <Footer projectPage={true} />
+      </div>
     </div>
   );
 }

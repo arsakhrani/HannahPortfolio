@@ -6,6 +6,7 @@ export default function PictureAndQuote() {
     <div className={styles.container}>
       <div className={styles.pictureContainer}>
         <Image
+          objectFit={"cover"}
           layout={"fill"}
           src={
             "https://res.cloudinary.com/daolun2ab/image/upload/v1643907874/5-year-old-selfie/Image_01_hb97u2.jpg"

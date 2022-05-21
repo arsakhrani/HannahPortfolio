@@ -30,7 +30,9 @@ export default function DetailsText({ textType, project }) {
       <div className={styles.textContainer}>
         <p className={styles.briefText}>{project.success.textOne}</p>
         <p className={styles.briefText}>{project.success.textTwo}</p>
-        <p className={styles.briefText}>{project.success.textThree}</p>
+        <p id="good-morning-success" className={styles.briefText}>
+          {project.success.textThree}
+        </p>
         <p className={styles.briefText}>{project.success.textFour}</p>
         <p className={styles.briefText}>{project.success.textFive}</p>
       </div>

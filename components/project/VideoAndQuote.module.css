@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  right: 1.6rem;
+  background-color: #f3f1ed;
+  display: grid;
+  grid-template-columns: 8fr 5fr;
+}
+
+.quoteContainer {
+  position: relative;
+  align-self: stretch;
+  height: 90vh;
+  width: 100%;
+  margin-top: 5vh;
+}

@@ -10,11 +10,14 @@ export default function coldWater() {
   return (
     <div>
       <Details project={projects[0]} />
-      <Footer />
-      <VideoPlayer url={projects[0].videoUrl} />
-      <FullViewPicture url={projects[0].fullViewPicture} />
-      <Collage images={projects[0].collageImages} />
-      <Press projectName={"cold water"} />
+      <Footer projectPage={true} detailsArea={true} />
+      <div>
+        <VideoPlayer url={projects[0].videoUrl} />
+        <FullViewPicture url={projects[0].fullViewPicture} />
+        <Collage project={"cold water"} images={projects[0].collageImages} />
+        <Press projectName={"cold water"} />
+        <Footer projectPage={true} />
+      </div>
     </div>
   );
 }

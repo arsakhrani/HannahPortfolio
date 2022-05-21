@@ -19,15 +19,17 @@ export default function FullSizeCarousel() {
       >
         <div className={styles.imageContainer}>
           <Image
+            objectFit={"cover"}
             layout={"fill"}
             src={
-              "https://res.cloudinary.com/daolun2ab/image/upload/v1643979756/wholey/Acai_1_mov9vn.jpg"
+              "https://res.cloudinary.com/daolun2ab/image/upload/v1643979756/wholey/Design/Acai_1_mov9vn.jpg"
             }
             alt={"Feature Image"}
           />
         </div>
         <div className={styles.imageContainer}>
           <Image
+            objectFit={"cover"}
             layout={"fill"}
             src={
               "https://res.cloudinary.com/daolun2ab/image/upload/v1643979711/wholey/03_DSC_6049_tynigv.jpg"
@@ -37,6 +39,7 @@ export default function FullSizeCarousel() {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            objectFit={"cover"}
             layout={"fill"}
             src={
               "https://res.cloudinary.com/daolun2ab/image/upload/v1643979711/wholey/06_DSC_5097_zewaab.jpg"
@@ -46,6 +49,7 @@ export default function FullSizeCarousel() {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            objectFit={"cover"}
             layout={"fill"}
             src={
               "https://res.cloudinary.com/daolun2ab/image/upload/v1643979710/wholey/10_SA702471_copy_whulpk.jpg"
@@ -84,6 +88,7 @@ export default function FullSizeCarousel() {
           }}
         ></div>
       </div>
+      <h2 className={styles.titleText}>DESIGN</h2>
     </div>
   );
 }

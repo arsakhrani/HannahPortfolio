@@ -10,11 +10,14 @@ export default function goodMornings() {
   return (
     <div>
       <Details wholey={true} project={projects[5]} />
-      <Footer />
-      <PhotoCarousel />
-      <GalleryAndText />
-      <FullSizeCarousel />
-      <Press projectName={"good mornings"} />
+      <Footer projectPage={true} detailsArea={true} />
+      <div>
+        <PhotoCarousel />
+        <GalleryAndText />
+        <FullSizeCarousel />
+        <Press projectName={"good mornings"} />
+        <Footer projectPage={true} />
+      </div>
     </div>
   );
 }

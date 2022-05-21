@@ -5,6 +5,7 @@
   padding: 0 2rem;
   right: 1.6rem;
   background-color: #f3f1ed;
+  overflow-x: hidden;
 }
 
 .scrollableArea {
@@ -13,7 +14,6 @@
   position: relative;
   transition: all 0.5s linear;
   height: 90vh;
-  overflow-x: visible;
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;

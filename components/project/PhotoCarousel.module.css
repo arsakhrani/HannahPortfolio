@@ -6,6 +6,7 @@
   background-color: #f3f1ed;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
+  overflow-x: hidden;
 }
 
 .headerContainer {

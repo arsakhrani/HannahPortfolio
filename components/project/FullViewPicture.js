@@ -4,7 +4,12 @@ import styles from "./FullViewPicture.module.css";
 export default function FullViewPicture({ url }) {
   return (
     <div className={styles.container}>
-      <Image layout={"fill"} alt={"Feature Picture"} src={url} />
+      <Image
+        layout={"fill"}
+        alt={"Feature Picture"}
+        src={url}
+        objectFit={"cover"}
+      />
     </div>
   );
 }

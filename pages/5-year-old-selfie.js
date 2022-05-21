@@ -10,11 +10,14 @@ export default function fiveYearOldSelfie() {
   return (
     <div>
       <Details project={projects[1]} />
-      <Footer />
-      <VideoPlayer url={projects[1].videoUrl} />
-      <PhoneCarousel selfie={true} />
-      <PictureAndQuote />
-      <Press projectName={"selfie"} />
+      <Footer projectPage={true} detailsArea={true} />
+      <div>
+        <VideoPlayer url={projects[1].videoUrl} />
+        <PhoneCarousel selfie={true} />
+        <PictureAndQuote />
+        <Press projectName={"selfie"} />
+        <Footer projectPage={true} />
+      </div>
     </div>
   );
 }
