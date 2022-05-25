@@ -14,9 +14,9 @@ export default function aColorfulLife() {
       <div>
         <VideoPlayer url={projects[2].videoUrl} />
         <FullViewPicture url={projects[2].fullViewPicture} />
-        <FullViewPicture url={projects[2].fullViewPictureTwo} />
+        <FullViewPicture contain={true} url={projects[2].fullViewPictureTwo} />
         <Collage project="colorful life" images={projects[2].collageImages} />
-        <Press projectName={"colorful life"} />
+        <Press logoCount={7} projectName={"colorful life"} />
         <Footer projectPage={true} />
       </div>
     </div>

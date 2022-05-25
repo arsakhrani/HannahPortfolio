@@ -15,7 +15,7 @@ export default function fiveYearOldSelfie() {
         <VideoPlayer url={projects[1].videoUrl} />
         <PhoneCarousel selfie={true} />
         <PictureAndQuote />
-        <Press projectName={"selfie"} />
+        <Press logoCount={6} projectName={"selfie"} />
         <Footer projectPage={true} />
       </div>
     </div>

@@ -288,7 +288,7 @@ const projects = [
     videoUrl:
       "https://res.cloudinary.com/daolun2ab/video/upload/v1645462088/Midi%20Corona%20Persona/Website_220221_skipt9.mov",
     bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643907874/5-year-old-selfie/Image_01_hb97u2.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1645462024/Midi%20Corona%20Persona/03_PNG/Achtsame_l1bhe1.png",
     brief: {
       textOne:
         "Midi approached the agency for a campaign that would support the sense study they were conducting amidst corona. The project turned into something much bigger with the initial brief consisting of illustrative personas that would derive from the study itself, accompanying social media assets, and finally an online quiz that supported interactions with the study.",

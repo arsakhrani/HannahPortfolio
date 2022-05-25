@@ -18,7 +18,7 @@ export default function issWieDuBist() {
         smallPicture={projects[4].smallPicture}
       />
       <Collage project="iss wie du bist" images={projects[4].collageImages} />
-      <Press projectName={"iss wie du bist"} />
+      <Press logoCount={2} projectName={"iss wie du bist"} />
     </div>
   );
 }

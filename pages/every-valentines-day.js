@@ -18,7 +18,7 @@ export default function everyValentinesDay() {
         />
         <FullViewPicture url={projects[3].fullViewPicture} />
         <PhoneCarousel />
-        <Press projectName={"selfie"} />
+        <Press logoCount={3} projectName={"valentines"} />
         <Footer projectPage={true} />
       </div>
     </div>

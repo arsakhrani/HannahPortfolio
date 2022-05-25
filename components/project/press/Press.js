@@ -1,13 +1,21 @@
 import { useState } from "react";
-import ColdWaterCarousel from "./ColdWaterCarousel";
-import ColorfulLifeCarousel from "./ColorfulLifeCarousel";
-import FiveYearOldSelfieCarousel from "./FiveYearOldSelfieCarousel";
 import IssWieDuBistCarousel from "./IssWieDuBistCarousel";
 import OwnGoodFoodCarousel from "./OwnGoodFoodCarousel";
 import GoodMorningsCarousel from "./GoodMorningsCarousel";
 import styles from "./Press.module.css";
+import LogoCarousel from "./LogoCarousel";
+import {
+  coldWaterData,
+  colorfulLifeData,
+  coronaPersonaData,
+  goodMorningsData,
+  issWieDuBistData,
+  ownGoodFoodData,
+  selfieData,
+  valentinesData,
+} from "../../../data/press";
 
-export default function Press({ about, projectName }) {
+export default function Press({ about, projectName, logoCount }) {
   const [scrollBarPosition, setScrollBarPosition] = useState(0);
   const [isScrollActive, setIsScrollActive] = useState(false);
 
@@ -31,7 +39,20 @@ export default function Press({ about, projectName }) {
       style={{ cursor: isScrollActive && "grabbing" }}
     >
       <div
-        style={{ transform: `translate(-${scrollBarPosition * 1.33}px, 0px)` }}
+        style={{
+          transform:
+            logoCount === 6
+              ? `translate(-${scrollBarPosition * 1.33}px, 0px)`
+              : logoCount === 7
+              ? `translate(-${scrollBarPosition * 1.68}px, 0px)`
+              : logoCount === 5
+              ? `translate(-${scrollBarPosition}px, 0px)`
+              : logoCount === 4
+              ? `translate(-${scrollBarPosition * 0.67}px, 0px)`
+              : logoCount === 3
+              ? `translate(-${scrollBarPosition * 0.33}px, 0px)`
+              : null,
+        }}
         className={styles.scrollableArea}
       >
         <div className={styles.headingContainer}>
@@ -41,23 +62,41 @@ export default function Press({ about, projectName }) {
           </div>
         </div>
         <div className={styles.carouselContainer}>
-          {projectName === "cold water" && <ColdWaterCarousel />}
-          {projectName === "colorful life" && <ColorfulLifeCarousel />}
-          {projectName === "selfie" && <FiveYearOldSelfieCarousel />}
-          {projectName === "iss wie du bist" && <IssWieDuBistCarousel />}
-          {projectName === "own good food" && <OwnGoodFoodCarousel />}
-          {projectName === "good mornings" && <GoodMorningsCarousel />}
+          {projectName === "cold water" && (
+            <LogoCarousel sources={coldWaterData} />
+          )}
+          {projectName === "colorful life" && (
+            <LogoCarousel sources={colorfulLifeData} />
+          )}
+          {projectName === "selfie" && <LogoCarousel sources={selfieData} />}
+          {projectName === "valentines" && (
+            <LogoCarousel sources={valentinesData} />
+          )}
+          {projectName === "corona persona" && (
+            <LogoCarousel sources={coronaPersonaData} />
+          )}
+          {projectName === "iss wie du bist" && (
+            <LogoCarousel sources={issWieDuBistData} />
+          )}
+          {projectName === "own good food" && (
+            <LogoCarousel sources={ownGoodFoodData} />
+          )}
+          {projectName === "good mornings" && (
+            <LogoCarousel sources={goodMorningsData} />
+          )}
         </div>
       </div>
-      <div className={styles.scrollerContainer}>
-        <div className={styles.scrollBarHolder}>
-          <div
-            onMouseDown={() => setIsScrollActive(true)}
-            className={styles.scrollBar}
-            style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
-          ></div>
+      {logoCount > 2 && (
+        <div className={styles.scrollerContainer}>
+          <div className={styles.scrollBarHolder}>
+            <div
+              onMouseDown={() => setIsScrollActive(true)}
+              className={styles.scrollBar}
+              style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
+            ></div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

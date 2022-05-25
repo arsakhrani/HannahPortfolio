@@ -4,6 +4,14 @@
   padding: 5rem 1.5rem;
 }
 
+.fullScreenContainer {
+  position: relative;
+  right: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
 .videoPlayer {
   height: 100%;
   width: 100%;

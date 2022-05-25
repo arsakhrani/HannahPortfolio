@@ -19,7 +19,7 @@ export default function ownGoodFood() {
           smallPicture={projects[6].smallPicture}
         />
         <Collage project={"own good food"} images={projects[6].collageImages} />
-        <Press projectName={"own good food"} />
+        <Press logoCount={5} projectName={"own good food"} />
         <Footer projectPage={true} />
       </div>
     </div>
