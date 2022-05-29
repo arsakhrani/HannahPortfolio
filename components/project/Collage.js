@@ -36,7 +36,7 @@ export default function Collage({ images, project }) {
       },
       imageTwo: {
         bottom: "-2rem",
-        left: imageOneWidth * 1.1,
+        left: imageOneWidth * 1.12,
       },
       imageThree: {
         right: imageFourWidth * 1.55,

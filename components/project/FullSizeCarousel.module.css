@@ -4,6 +4,7 @@
   width: 100vw;
   position: relative;
   right: 1.6rem;
+  z-index: 3;
 }
 
 .container {
@@ -35,8 +36,8 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
-  bottom: 1em;
-  right: 2em;
+  bottom: 1.5em;
+  right: 1em;
 }
 
 .dot {

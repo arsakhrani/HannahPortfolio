@@ -38,17 +38,15 @@ export default function Footer({ projectPage, detailsArea }) {
       <Link href="/about">
         <a className={styles.changeColor}>About</a>
       </Link>
-      <Link href="/photography">
-        <a
-          className={styles.changeColor}
-          target="_blank"
-          rel="noreferrer"
-          href="https://res.cloudinary.com/daolun2ab/image/upload/fl_attachment:Hannah_Cunningham_cv/v1649421102/220208_Hannah_CV_V02_bkgsex.pdf"
-          download
-        >
-          CV
-        </a>
-      </Link>
+      <a
+        className={styles.changeColor}
+        target="_blank"
+        rel="noreferrer"
+        href="https://res.cloudinary.com/daolun2ab/image/upload/fl_attachment:Hannah_Cunningham_cv/v1649421102/220208_Hannah_CV_V02_bkgsex.pdf"
+        download
+      >
+        CV
+      </a>
     </footer>
   );
 }

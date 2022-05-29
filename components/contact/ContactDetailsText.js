@@ -4,7 +4,14 @@ export default function ContactDetailsText({ textType }) {
   if (textType === "email") {
     return (
       <div className={styles.textContainer}>
-        <p className={styles.briefText}>hannahcunny25@gmail.com</p>
+        <a
+          rel="noreferrer"
+          href="mailto:hannahcunny25@gmail.com?Subject=Hello,%20beautiful"
+          target="_blank"
+          className={styles.briefText}
+        >
+          hannahcunny25@gmail.com
+        </a>
       </div>
     );
   }
@@ -12,7 +19,9 @@ export default function ContactDetailsText({ textType }) {
   if (textType === "mobile") {
     return (
       <div className={styles.textContainer}>
-        <p className={styles.briefText}>+44 7954 709178</p>
+        <a href="tel:+447954709178" className={styles.briefText}>
+          +44 7954 709178
+        </a>
       </div>
     );
   }
@@ -20,7 +29,14 @@ export default function ContactDetailsText({ textType }) {
   if (textType === "instagram") {
     return (
       <div className={styles.textContainer}>
-        <p className={styles.briefText}>@hannahcunny25</p>
+        <a
+          rel="noreferrer"
+          href="https://www.instagram.com/hannahcunny25/?hl=en"
+          target="_blank"
+          className={styles.briefText}
+        >
+          @hannahcunny25
+        </a>
       </div>
     );
   }
@@ -28,7 +44,14 @@ export default function ContactDetailsText({ textType }) {
   if (textType === "linkedin") {
     return (
       <div className={styles.textContainer}>
-        <p className={styles.briefText}>Hannah Cunningham</p>
+        <a
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/hannah-cunningham-044674119/"
+          target="_blank"
+          className={styles.briefText}
+        >
+          Hannah Cunningham
+        </a>
       </div>
     );
   }

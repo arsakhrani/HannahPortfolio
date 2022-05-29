@@ -213,9 +213,14 @@ export default function PhotoCarousel({ about }) {
         </div>
       </div>
       {about && (
-        <div className={styles.followMeContainer}>
+        <a
+          href="https://www.instagram.com/hannahcunny25/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.followMeContainer}
+        >
           <h1>FOLLOW</h1>
-        </div>
+        </a>
       )}
     </div>
   );

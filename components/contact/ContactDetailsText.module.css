@@ -5,4 +5,6 @@
 .briefText {
   font-size: 1.4rem;
   margin-bottom: 1.5em;
+  text-decoration: underline;
+  cursor: pointer;
 }

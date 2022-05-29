@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer detailsArea={true} />
     </div>
   );
 }

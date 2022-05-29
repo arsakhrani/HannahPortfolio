@@ -5,7 +5,7 @@ export default function contact() {
   return (
     <div>
       <ContactDetails />
-      <Footer />
+      <Footer detailsArea={true} />
     </div>
   );
 }

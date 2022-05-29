@@ -58,36 +58,38 @@ export default function PictureAndPicture({
           }
         />
       </div>
-      <div className={styles.dotContainer}>
-        <div
-          style={{ opacity: selectedDot === 1 && 1 }}
-          className={styles.dot}
-          onClick={() => {
-            changeSelection(1);
-          }}
-        ></div>
-        <div
-          style={{ opacity: selectedDot === 2 && 1 }}
-          className={styles.dot}
-          onClick={() => {
-            changeSelection(2);
-          }}
-        ></div>
-        <div
-          style={{ opacity: selectedDot === 3 && 1 }}
-          className={styles.dot}
-          onClick={() => {
-            changeSelection(3);
-          }}
-        ></div>
-        <div
-          style={{ opacity: selectedDot === 4 && 1 }}
-          className={styles.dot}
-          onClick={() => {
-            changeSelection(4);
-          }}
-        ></div>
-      </div>
+      {ownGoodFood && (
+        <div className={styles.dotContainer}>
+          <div
+            style={{ opacity: selectedDot === 1 && 1 }}
+            className={styles.dot}
+            onClick={() => {
+              changeSelection(1);
+            }}
+          ></div>
+          <div
+            style={{ opacity: selectedDot === 2 && 1 }}
+            className={styles.dot}
+            onClick={() => {
+              changeSelection(2);
+            }}
+          ></div>
+          <div
+            style={{ opacity: selectedDot === 3 && 1 }}
+            className={styles.dot}
+            onClick={() => {
+              changeSelection(3);
+            }}
+          ></div>
+          <div
+            style={{ opacity: selectedDot === 4 && 1 }}
+            className={styles.dot}
+            onClick={() => {
+              changeSelection(4);
+            }}
+          ></div>
+        </div>
+      )}
     </div>
   );
 }

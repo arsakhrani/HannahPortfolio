@@ -15,7 +15,7 @@ export default function coldWater() {
         <VideoPlayer url={projects[0].videoUrl} />
         <FullViewPicture url={projects[0].fullViewPicture} />
         <Collage project={"cold water"} images={projects[0].collageImages} />
-        <Press logoCount={6} projectName={"cold water"} />
+        <Press logoCount={5} projectName={"cold water"} />
         <Footer projectPage={true} />
       </div>
     </div>

@@ -4,19 +4,19 @@ import styles from "./PhotographyDetails.module.css";
 import PhotographyDetailsText from "./PhotographyDetailsText";
 
 export default function PhotographyDetails() {
-  const [textToShow, setTextToShow] = useState("personal");
+  const [textToShow, setTextToShow] = useState("overview");
 
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>PHOTOGRAPHY</h1>
       <div className={styles.gridContainer}>
         <p className={styles.companyText}>
-          Creative Lead & Art Director based between Berlin & London
+          Currently Getty Contributor and Freelance Photographer
         </p>
         <div className={styles.linkContainer}>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("personal")}
+              onClick={() => setTextToShow("overview")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -26,16 +26,16 @@ export default function PhotographyDetails() {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "personal" && "#FD5D50" }}
+                style={{ color: textToShow === "overview" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                PERSONAL BIO
+                OVERVIEW
               </span>
             </span>
           </div>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("experience")}
+              onClick={() => setTextToShow("getty")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -45,16 +45,16 @@ export default function PhotographyDetails() {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "experience" && "#FD5D50" }}
+                style={{ color: textToShow === "getty" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                EXPERIENCE
+                GETTY
               </span>
             </span>
           </div>
           <div className={styles.link}>
             <span
-              onClick={() => setTextToShow("location")}
+              onClick={() => setTextToShow("book")}
               style={{ cursor: "pointer" }}
             >
               <Image
@@ -64,10 +64,10 @@ export default function PhotographyDetails() {
                 width={15}
               />
               <span
-                style={{ color: textToShow === "location" && "#FD5D50" }}
+                style={{ color: textToShow === "book" && "#FD5D50" }}
                 className={styles.linkText}
               >
-                LOCATION
+                BOOK ME
               </span>
             </span>
           </div>

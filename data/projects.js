@@ -90,7 +90,7 @@ const projects = [
     fullViewPicture:
       "https://res.cloudinary.com/daolun2ab/image/upload/v1643978931/a-colorful-life/ACL_HeaderLayout_b0dvns.jpg",
     fullViewPictureTwo:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643978936/a-colorful-life/MockUp_Iphone_02_fvocnr.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652011190/a-colorful-life/MockUp_Iphone_02_jyjyi1.png",
     brief: {
       textOne:
         "With over 55 million people living with dementia worldwide, most people know that memory loss is one of the main symptoms of the illness. However, very few know that in actual fact, severe anxiety is just as much an issue - sitting in the shadows every single day.",

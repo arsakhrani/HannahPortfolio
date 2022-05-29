@@ -7,7 +7,6 @@ export default function VideoPlayer({ url, fullScreen }) {
   return (
     <div className={fullScreen ? styles.fullScreenContainer : styles.container}>
       <video
-        style={{ objectFit: "cover", cursor: "pointer" }}
         onMouseOver={() => setShowControls(true)}
         onMouseLeave={() => setShowControls(false)}
         controls={showControls}

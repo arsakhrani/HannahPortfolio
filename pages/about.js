@@ -7,9 +7,11 @@ export default function about() {
   return (
     <div>
       <AboutDetails />
-      <Footer />
-      <Press about={true} projectName={"iss wie du bist"} />
-      <PhotoCarousel about={true} />
+      <Footer projectPage={true} detailsArea={true} />
+      <div>
+        <Press about={true} projectName={"about"} logoCount={7} />
+        <PhotoCarousel about={true} />
+      </div>
     </div>
   );
 }

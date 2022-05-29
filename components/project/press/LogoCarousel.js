@@ -11,6 +11,9 @@ export default function LogoCarousel({ sources }) {
           target={"_blank"}
           href={source.link}
           className={styles.logoContainer}
+          style={{
+            padding: source.padding,
+          }}
         >
           <div className={styles.logo}>
             <Image

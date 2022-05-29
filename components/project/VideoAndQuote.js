@@ -11,8 +11,9 @@ export default function VideoAndQuote({ quote, url }) {
         style={{
           objectFit: "cover",
           cursor: "pointer",
-          height: "100%",
+          height: "100vh",
           width: "100%",
+          zIndex: 3,
         }}
         onMouseOver={() => setShowControls(true)}
         onMouseLeave={() => setShowControls(false)}

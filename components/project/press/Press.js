@@ -1,10 +1,8 @@
 import { useState } from "react";
-import IssWieDuBistCarousel from "./IssWieDuBistCarousel";
-import OwnGoodFoodCarousel from "./OwnGoodFoodCarousel";
-import GoodMorningsCarousel from "./GoodMorningsCarousel";
 import styles from "./Press.module.css";
 import LogoCarousel from "./LogoCarousel";
 import {
+  aboutData,
   coldWaterData,
   colorfulLifeData,
   coronaPersonaData,
@@ -56,7 +54,9 @@ export default function Press({ about, projectName, logoCount }) {
         className={styles.scrollableArea}
       >
         <div className={styles.headingContainer}>
-          <h2>{about ? "EXPERIENCE" : "PRESS"}</h2>
+          <h2 style={{ fontSize: about && "3rem" }}>
+            {about ? "EXPERIENCE" : "PRESS"}
+          </h2>
           <div className={styles.clickToViewContainer}>
             <p style={{ textAlign: "center" }}>click to view</p>
           </div>
@@ -84,6 +84,7 @@ export default function Press({ about, projectName, logoCount }) {
           {projectName === "good mornings" && (
             <LogoCarousel sources={goodMorningsData} />
           )}
+          {projectName === "about" && <LogoCarousel sources={aboutData} />}
         </div>
       </div>
       {logoCount > 2 && (

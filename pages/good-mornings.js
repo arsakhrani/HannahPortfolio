@@ -15,7 +15,7 @@ export default function goodMornings() {
         <PhotoCarousel />
         <GalleryAndText />
         <FullSizeCarousel goodMorning={true} />
-        <Press logoCount={4} projectName={"good mornings"} />
+        <Press logoCount={3} projectName={"good mornings"} />
         <Footer projectPage={true} />
       </div>
     </div>
