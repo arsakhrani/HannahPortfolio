@@ -10,10 +10,10 @@ import FullSizeCarousel from "../components/project/FullSizeCarousel";
 export default function coronaPersona() {
   return (
     <div>
-      <Details project={projects[7]} />
+      <Details project={projects[3]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>
-        <VideoPlayer fullScreen={true} url={projects[7].videoUrl} />
+        <VideoPlayer url={projects[3].videoUrl} />
         <SketchAndSketch />
         <SketchCarousel />
         <FullSizeCarousel />

@@ -9,12 +9,12 @@ import Press from "../components/project/press/Press";
 export default function coldWater() {
   return (
     <div>
-      <Details project={projects[0]} />
+      <Details project={projects[2]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>
-        <VideoPlayer url={projects[0].videoUrl} />
-        <FullViewPicture url={projects[0].fullViewPicture} />
-        <Collage project={"cold water"} images={projects[0].collageImages} />
+        <VideoPlayer url={projects[2].videoUrl} />
+        <FullViewPicture url={projects[2].fullViewPicture} />
+        <Collage project={"cold water"} images={projects[2].collageImages} />
         <Press logoCount={5} projectName={"cold water"} />
         <Footer projectPage={true} />
       </div>

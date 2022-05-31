@@ -20,6 +20,7 @@ export default function ContactDetails() {
               style={{ cursor: "pointer" }}
             >
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}
@@ -39,6 +40,7 @@ export default function ContactDetails() {
               style={{ cursor: "pointer" }}
             >
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}
@@ -58,6 +60,7 @@ export default function ContactDetails() {
               style={{ cursor: "pointer" }}
             >
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}
@@ -77,6 +80,7 @@ export default function ContactDetails() {
               style={{ cursor: "pointer" }}
             >
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}

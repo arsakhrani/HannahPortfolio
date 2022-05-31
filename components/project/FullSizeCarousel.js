@@ -19,6 +19,9 @@ export default function FullSizeCarousel({ goodMorning }) {
       >
         <div className={styles.imageContainer}>
           <Image
+            priority
+            quality={100}
+            draggable={false}
             objectFit={"cover"}
             layout={"fill"}
             src={
@@ -31,11 +34,14 @@ export default function FullSizeCarousel({ goodMorning }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            priority
+            quality={100}
+            draggable={false}
             objectFit={"cover"}
             layout={"fill"}
             src={
               goodMorning
-                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1643979711/wholey/03_DSC_6049_tynigv.jpg"
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1649420775/wholey/Design/Screenshot_2022-04-08_at_14.17_tpa3qs.jpg"
                 : "https://res.cloudinary.com/daolun2ab/image/upload/v1645462091/Midi%20Corona%20Persona/Midi_MockUp_CloseUp_V02_hc_enjkpl.jpg"
             }
             alt={"Feature Image"}
@@ -44,10 +50,13 @@ export default function FullSizeCarousel({ goodMorning }) {
         {goodMorning && (
           <div className={styles.imageContainer}>
             <Image
+              priority
+              quality={100}
+              draggable={false}
               objectFit={"cover"}
               layout={"fill"}
               src={
-                "https://res.cloudinary.com/daolun2ab/image/upload/v1643979711/wholey/06_DSC_5097_zewaab.jpg"
+                "https://res.cloudinary.com/daolun2ab/image/upload/v1645461876/wholey/Design/Book_Mockup_V04_hc_nws7ix.jpg"
               }
               alt={"Feature Image"}
             />
@@ -56,10 +65,13 @@ export default function FullSizeCarousel({ goodMorning }) {
         {goodMorning && (
           <div className={styles.imageContainer}>
             <Image
+              priority
+              quality={100}
+              draggable={false}
               objectFit={"cover"}
               layout={"fill"}
               src={
-                "https://res.cloudinary.com/daolun2ab/image/upload/v1643979710/wholey/10_SA702471_copy_whulpk.jpg"
+                "https://res.cloudinary.com/daolun2ab/image/upload/v1645461876/wholey/Design/Wholey_Hot_Shot_Group_2_pcb3wu.jpg"
               }
               alt={"Feature Image"}
             />

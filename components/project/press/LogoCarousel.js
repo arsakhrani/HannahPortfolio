@@ -17,6 +17,8 @@ export default function LogoCarousel({ sources }) {
         >
           <div className={styles.logo}>
             <Image
+              loading={"eager"}
+              draggable={false}
               objectFit={"contain"}
               layout={"fill"}
               alt={source.alt}

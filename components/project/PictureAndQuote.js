@@ -6,6 +6,8 @@ export default function PictureAndQuote() {
     <div className={styles.container}>
       <div className={styles.pictureContainer}>
         <Image
+          quality={100}
+          draggable={false}
           objectFit={"cover"}
           layout={"fill"}
           src={

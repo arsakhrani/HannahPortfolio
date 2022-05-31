@@ -9,6 +9,7 @@ export default function SketchAndSketch({}) {
         className={styles.pictureContainer}
       >
         <Image
+          draggable={false}
           objectFit={"contain"}
           layout={"fill"}
           src={
@@ -22,6 +23,7 @@ export default function SketchAndSketch({}) {
         className={styles.pictureContainer}
       >
         <Image
+          draggable={false}
           objectFit={"contain"}
           layout={"fill"}
           src={

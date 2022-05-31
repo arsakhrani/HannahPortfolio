@@ -13,10 +13,22 @@
 }
 
 .textContainer {
-  font-size: 0.65rem;
+  font-size: 10px;
   height: 20%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-height: 700px) {
+  .textContainer {
+    font-size: 12px;
+  }
+}
+
+@media (min-height: 900px) {
+  .textContainer {
+    font-size: 14px;
+  }
 }

@@ -9,7 +9,7 @@ import FullSizeCarousel from "../components/project/FullSizeCarousel";
 export default function goodMornings() {
   return (
     <div>
-      <Details wholey={true} project={projects[5]} />
+      <Details wholey={true} project={projects[7]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>
         <PhotoCarousel />

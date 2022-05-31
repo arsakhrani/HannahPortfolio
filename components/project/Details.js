@@ -32,6 +32,7 @@ export default function Details({ project, wholey }) {
               style={{ cursor: "pointer" }}
             >
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}
@@ -51,6 +52,7 @@ export default function Details({ project, wholey }) {
               style={{ cursor: "pointer" }}
             >
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}
@@ -73,6 +75,7 @@ export default function Details({ project, wholey }) {
                   style={{ cursor: "pointer" }}
                 >
                   <Image
+                    draggable={false}
                     src={"/assets/icons/bullet.svg"}
                     alt={"bullet-point"}
                     height={15}
@@ -94,6 +97,7 @@ export default function Details({ project, wholey }) {
                 style={{ cursor: "pointer" }}
               >
                 <Image
+                  draggable={false}
                   src={"/assets/icons/bullet.svg"}
                   alt={"bullet-point"}
                   height={15}

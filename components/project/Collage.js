@@ -90,6 +90,7 @@ export default function Collage({ images, project }) {
       <div>
         <div style={style.imageOne} className={styles.imageOne}>
           <Image
+            draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageOneRatio(naturalWidth / naturalHeight)
             }
@@ -101,6 +102,7 @@ export default function Collage({ images, project }) {
         </div>
         <div style={style.imageTwo} className={styles.imageTwo}>
           <Image
+            draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageTwoRatio(naturalWidth / naturalHeight)
             }
@@ -112,6 +114,7 @@ export default function Collage({ images, project }) {
         </div>
         <div style={style.imageThree} className={styles.imageThree}>
           <Image
+            draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageThreeRatio(naturalWidth / naturalHeight)
             }
@@ -123,6 +126,7 @@ export default function Collage({ images, project }) {
         </div>
         <div className={styles.imageFour}>
           <Image
+            draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageFourRatio(naturalWidth / naturalHeight)
             }

@@ -1,5 +1,85 @@
 const projects = [
   {
+    title: "ISS WIE DU BIST",
+    company: "Crowd Farming",
+    url: "iss-wie-du-bist",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_03_qd3rc2.png",
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1645525034/iss-wie-du-bist/IssWieDuBist___CrowdFarming___2021_rgsbfs.mp4",
+    bigPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979293/iss-wie-du-bist/Crowd_Farming_Header_Left_epftto.jpg",
+    smallPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652009810/iss-wie-du-bist/Crowd_Farming_Header_Right_qg4yx7.png",
+    brief: {
+      textOne:
+        "Launching a new brand in a new country is always tough, but add in the fact we had 22 days from concept sign off to the first asset supply date, it was no easy feet.",
+      textTwo:
+        "We were tasked to launch Crowd Farming to the German audience - with a focus on shifting the seasonal Avocado and Orange produce the farms had whilst the campaign was live. We had a full 360 campaign to create; 30’ TV spot, static and moving OOH, and static and moving social media assets.",
+    },
+    idea: {
+      textOne:
+        "The campaign concept combined humour to create the #IssWieDuBist (You are what you eat) campaign, encouraging shoppers to buy smart and sustainable, whilst drawing on comparisons between human and fruity behaviour.",
+      textTwo:
+        "Our four key words - Natural, Fearless, Combative and Direct - were the adjectives that correlated to both the produce and the audience we were appealing to.",
+      textThree:
+        "The TV spot uses charming moments and playful visual comparisons between man and fruit, in a split screen ad that follows the journey of the produce from seed to the consumers hands.",
+    },
+    role: {
+      textOne:
+        "Leading the team creatively, I worked at the lead Art Director on the project - working across initial concepts & refinement, then taking the lead on bringing the film and campaign to life - alongside my Director Ale Ruiz-Zorilla - creatively producing and finally designing & art working all the final print and DOOH assets.",
+      textTwo:
+        "It’s easy to say that my hands touched every asset of the campaign.",
+      textThree:
+        "In this project I had to excel in a leadership position, due to the lack of experience for the client (being a start up). I always greeting them with patience and guided them through each part of the project’s process both professionally and compassionately. Something which I thoroughly enjoyed. My previous experience in creative production proved invaluable in this campaign too, as I was fast to react to changes in pre-production, on set and in post - meaning we met our 22 day deadline and launched on time.",
+    },
+    collageImages: {
+      urlOne:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_01_k5otsw.png",
+      urlTwo:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_02_vgwhhs.png",
+      urlThree:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_03_qd3rc2.png",
+      urlFour:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1643912418/iss-wie-du-bist/Photo_Collage_04_wot7fn.jpg",
+    },
+  },
+  {
+    title: "5 YEAR OLD SELFIE",
+    company: "Young Minds",
+    url: "5-year-old-selfie",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1644346014/Landing%20Page/vanessa-serpas-e6lWMBIgNso-unsplash_amnwe1.jpg",
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1643992862/5-year-old-selfie/5yearoldselfieV3_tppfrv.mp4",
+    brief: {
+      textOne:
+        "I started the journey with YoungMinds at a Facebook Hack-a-thon event - With instant chemistry, my creative partner and I approached them for a pro-bono briefing, which ended up being an extension of the initial brief at the hack-a-thon.",
+      textTwo:
+        "Get young people to be kinder to themselves around exam results time (early August).",
+      textThree:
+        "With zero budget, and only social media to connect with their audience, they needed a bold idea that would catch the attention of young people and get them to engage.",
+    },
+    idea: {
+      textOne:
+        "The concept used a therapy technique that is inherent in dealing with childhood trauma - Inner Child Visualisation Therapy (ICVT). ICVT asks the patient to take the negative thoughts they experience day to day, and tell them to their younger selves - adding a third perspective to the negative things we say to ourselves in adulthood, helps us to be kinder to ourselves and not so pressuring to be perfect.",
+      textTwo:
+        "I adapted this technique into something more playful and social, that kept its reflective aspect. From positivity and cute childhood pics, came #5yearoldselfie.",
+      textThree:
+        "Participants simply had to share a selfie of themselves as a child to their social media, whilst sharing 3 positive things they wanted to say to their younger self and tagging friends.",
+    },
+    success: {
+      textOne:
+        "With mental health a topic very close to my own family, I wanted the campaign to succeed in one thing only, helping people be kinder to themselves.",
+      textTwo:
+        "I’m thrilled to say that it reached over 20,000 participants across the entire world, hitting the USA, Europe, India, and of course the UK. It was trending on Twitter for the entire launch day, featured on popular websites such as Buzzfeed & Stylist, and spread across influential people on social media like British Journalist Cathy Newman and popular YouTuber Daniel Howell.",
+    },
+    role: {
+      textOne:
+        "Once again I found myself as a creative with many branches in this project, taking a lead on client and project management, whilst also concepting and designing for the campaign - but as we got further into the project and closer to the deadline, a small but mighty team were behind me for support, meaning I was able to focus on the creative and PR side of things to help the campaign blow up. Together with my creative partner we made created this campaign, totally pro-bono.",
+    },
+  },
+  {
     title: "COLD WATER",
     company: "AXA Health",
     url: "cold-water",
@@ -45,38 +125,115 @@ const projects = [
     },
   },
   {
-    title: "5 YEAR OLD SELFIE",
-    company: "Young Minds",
-    url: "5-year-old-selfie",
-    bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643907874/5-year-old-selfie/Image_01_hb97u2.jpg",
+    title: "CORONA PERSONA",
+    company: "Midi",
+    url: "corona-persona",
     videoUrl:
-      "https://res.cloudinary.com/daolun2ab/video/upload/v1643992862/5-year-old-selfie/5yearoldselfieV3_tppfrv.mp4",
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1645462088/Midi%20Corona%20Persona/Website_220221_skipt9.mov",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1644345708/Landing%20Page/Midi_Sinn_Studie_cb9rtb.jpg",
     brief: {
       textOne:
-        "I started the journey with YoungMinds at a Facebook Hack-a-thon event - With instant chemistry, my creative partner and I approached them for a pro-bono briefing, which ended up being an extension of the initial brief at the hack-a-thon.",
+        "Midi approached the agency for a campaign that would support the sense study they were conducting amidst corona. The project turned into something much bigger with the initial brief consisting of illustrative personas that would derive from the study itself, accompanying social media assets, and finally an online quiz that supported interactions with the study.",
       textTwo:
-        "Get young people to be kinder to themselves around exam results time (early August).",
-      textThree:
-        "With zero budget, and only social media to connect with their audience, they needed a bold idea that would catch the attention of young people and get them to engage.",
+        "All of which was to be held by a look and feel we created, which still worked in the realms of the Midi brand, but stood alone in its own right visually. I soon got to work as the Lead Art Director on the project.",
     },
     idea: {
       textOne:
-        "The concept used a therapy technique that is inherent in dealing with childhood trauma - Inner Child Visualisation Therapy (ICVT). ICVT asks the patient to take the negative thoughts they experience day to day, and tell them to their younger selves - adding a third perspective to the negative things we say to ourselves in adulthood, helps us to be kinder to ourselves and not so pressuring to be perfect.",
+        "My focus for the campaign was the voices and opinions of the people in the study - I wanted humanity and authenticity to flow throughout the illustrative personas and the campaign itself. To do this, I incorporated a textural element to each persona that added to the definition that was given to them. ",
       textTwo:
-        "I adapted this technique into something more playful and social, that kept its reflective aspect. From positivity and cute childhood pics, came #5yearoldselfie.",
+        "I built the personas with illustrator Phillips Seefeldt, discussing each characteristic and exaggerated body parts that might further denote the ‘terms’ assigned to each persona - taking a naive perspective on the illustration style, we created 8 personas that showcased the vulnerability and feelings amidst the pandemic.",
       textThree:
-        "Participants simply had to share a selfie of themselves as a child to their social media, whilst sharing 3 positive things they wanted to say to their younger self and tagging friends.",
+        "I continued to work on the campaign look and feel, focussing on blue and purple tones in a typographic manner, in order to complement the vibrant illustrative personas. Typographic ‘rules’ were brought in and were carried throughout the social media, printed study design and the supporting print material that later followed the campaign.",
     },
     success: {
       textOne:
-        "With mental health a topic very close to my own family, I wanted the campaign to succeed in one thing only, helping people be kinder to themselves.",
-      textTwo:
-        "I’m thrilled to say that it reached over 20,000 participants across the entire world, hitting the USA, Europe, India, and of course the UK. It was trending on Twitter for the entire launch day, featured on popular websites such as Buzzfeed & Stylist, and spread across influential people on social media like British Journalist Cathy Newman and popular YouTuber Daniel Howell.",
+        "The project started small and simply grew as the months went by. Midi were so overwhelmingly happy with the CI that I built and the personas that were created (they were the first design element we built), they wanted more and more supporting assets. We designed the final live presentation and followed up the campaign with a printed poster package which were distributed across the Midi network and explored the personas in more detail.",
     },
     role: {
       textOne:
-        "Once again I found myself as a creative with many branches in this project, taking a lead on client and project management, whilst also concepting and designing for the campaign - but as we got further into the project and closer to the deadline, a small but mighty team were behind me for support, meaning I was able to focus on the creative and PR side of things to help the campaign blow up. Together with my creative partner we made created this campaign, totally pro-bono.",
+        "Once again, I concepted and led the design and visuals on the project, later taking the reigns on outsourcing some designing to the juniors due to a clash in project timings (Corona Persona VS Crowd Farming) as a way to ensure the project was completed for the live event. Again, my flare and design ideas can be felt across every asset as I oversaw everything for the campaign from start to finish.",
+    },
+  },
+  {
+    title: "OWN GOOD FOOD",
+    company: "Beets & Roots",
+    url: "own-good-food",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1644345767/Landing%20Page/02_2021_08_beets_roots_25_Tom_Wideangle_218_e6q84f.jpg",
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1645525374/own%20good%20food/TM210901PR1600_Beets_Roots_NoCarbon_v19_z8mbsm.mp4",
+    bigPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1649169850/own%20good%20food/B_R_TOM_GIF_V01_hxioac.gif",
+    smallPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1644137445/own%20good%20food/_Slider%20in%20middle%20of%20page/01_2021_08_beets_roots_29_Veg.Chicken_Bowl_Closeup_025_qjxawy.jpg",
+    brief: {
+      textOne:
+        "Beets & roots is a lunch time staple, selling healthy and planet conscious lunch bowls to the business brains across Germany. In 2021 they were looking for investment to expand the business, approaching the agency for a crowd investing campaign that focussed on their sustainable business model and plans for growth internationally.",
+      textTwo:
+        "The campaign had to be cool, promote their new bowl, and feel exclusive to those who would financially contribute. With the key channel as Instagram, I set to work on concepting and designing a campaign worth investing in.",
+    },
+    idea: {
+      textOne:
+        "#owngoodfood perfectly blended conscious eating with the investment opportunity. It was playful, understated and sleek, with all assets developed from stylish photography of the newest store in Frankfurt, and the delicious new bowl on offer. I paired the flash style statics with funky animation, to create a clean yet colourful look and feel that teased the everyday investor, whilst still feeling a part of the current branding.",
+    },
+    success: {
+      textOne:
+        "The investment campaign broke boundaries as it hit its goal of 1,111,000€ in just 22 days. With such a success the #owngoodfood bowl stayed on the menu, now not only for investors but also to the rest of the public as a celebration and ode to success.",
+      textTwo:
+        "Additionally, some key design elements were carried on through the social media of Beets & Roots, including the colourful flash style photography and the editorial split screen design.",
+    },
+    role: {
+      textOne:
+        "At the time of the campaign, I worked as the lead Art Director on the project, creatively guiding the look and feel; concepting assets and spearheading creative production. Working closely with my photographer photographer John Brömstrup, I built the campaign and guided it to its success throughout 2021.",
+      textTwo:
+        "This project required me to really step up and lead the team from start to finish, in the office, on set and after the launch - with me being the consistent figure across the entire project period. I had to cover staff sickness due to corona and play on my many strengths across the project process.",
+    },
+    collageImages: {
+      urlOne:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_07_Wide3_585_ekgfzn.png",
+      urlTwo:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_04_PickUp_405_u5t0qg.png",
+      urlThree:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_21_FetaBowl_071_p4xrhz.png",
+      urlFour:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_30_Deconstructed2_0085_xmrdpa.png",
+    },
+  },
+  {
+    title: "EVERY VALENTINE'S DAY",
+    company: "GLAAD",
+    url: "every-valentines-day",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912252/every-val-day/Header_Image_q8bmgc.jpg",
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1649170728/every-val-day/Every_Valentine_s_Day_1x1_kyzkd1.mp4",
+    fullViewPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912252/every-val-day/Header_Image_q8bmgc.jpg",
+    quoteGif:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979135/every-val-day/GIF%20Content/Export_EVD_V01_gwc30z.gif",
+    brief: {
+      textOne:
+        "Valentine’s day was just around the corner, and once again the shops were full of all hoards of hearts shared merchandise that felt like it celebrated love inclusively.",
+      textTwo: "However I thought otherwise.",
+      textThree:
+        "My creative partner and I independently teamed up with GLAAD to create an online campaign that celebrates all kinds of love, totally pro-bono.",
+    },
+    idea: {
+      textOne:
+        "The simple observation that the merchandise on Valentine’s Day did not encapsulate a proper expression of love in all its forms, was saddening and shocking. And that in these ‘woke’ times, we couldn’t even get a card right - I decided to do something about it. I developed a series of all inclusive LGBTQ+ Valentine’s day cards - all created by individual LGBTQ+ illustrators and artists that fully expressed the love they wanted to share - These cards were transformed into digital formats and were shared as IG cards that participants could screenshot and send to one another on the big day.",
+      textTwo:
+        "Along with the cards itself, I created a short film that showed love in all its forms for GLAAD’s social media channels and to promote the card series.",
+      textThree:
+        "After all, every love deserves to be celebrated on Valentine’s Day.",
+    },
+    role: {
+      textOne:
+        "This project was a true test of my skills and diversity as a creative. Having been the original point of contact for GLAAD, I not only handled the accounts and project management side of the things, but I scouted and liaised with the artists themselves, and in turn created a card myself that honoured my sister’s bisexuality.",
+      textTwo:
+        "I was also the Art Director on the project, meaning I was across all aspects of making the final film, from concepting to storyboarding, sourcing assets and editing the final film for GLAAD’s channels - even creating the SFX myself from a trusted pair of red Dahle scissors - and recording and directing the VO and music composition.",
+      textThree:
+        "All in all it was a huge task, but something I am still to this day, super proud of achieving - opening up self expression to everyone on Valentine’s Day.",
     },
   },
   {
@@ -127,92 +284,11 @@ const projects = [
     },
   },
   {
-    title: "EVERY VALENTINE'S DAY",
-    company: "GLAAD",
-    url: "every-valentines-day",
-    bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912252/every-val-day/Header_Image_q8bmgc.jpg",
-    videoUrl:
-      "https://res.cloudinary.com/daolun2ab/video/upload/v1649170728/every-val-day/Every_Valentine_s_Day_1x1_kyzkd1.mp4",
-    fullViewPicture:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912252/every-val-day/Header_Image_q8bmgc.jpg",
-    quoteGif:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979135/every-val-day/GIF%20Content/Export_EVD_V01_gwc30z.gif",
-    brief: {
-      textOne:
-        "Valentine’s day was just around the corner, and once again the shops were full of all hoards of hearts shared merchandise that felt like it celebrated love inclusively.",
-      textTwo: "However I thought otherwise.",
-      textThree:
-        "My creative partner and I independently teamed up with GLAAD to create an online campaign that celebrates all kinds of love, totally pro-bono.",
-    },
-    idea: {
-      textOne:
-        "The simple observation that the merchandise on Valentine’s Day did not encapsulate a proper expression of love in all its forms, was saddening and shocking. And that in these ‘woke’ times, we couldn’t even get a card right - I decided to do something about it. I developed a series of all inclusive LGBTQ+ Valentine’s day cards - all created by individual LGBTQ+ illustrators and artists that fully expressed the love they wanted to share - These cards were transformed into digital formats and were shared as IG cards that participants could screenshot and send to one another on the big day.",
-      textTwo:
-        "Along with the cards itself, I created a short film that showed love in all its forms for GLAAD’s social media channels and to promote the card series.",
-      textThree:
-        "After all, every love deserves to be celebrated on Valentine’s Day.",
-    },
-    role: {
-      textOne:
-        "This project was a true test of my skills and diversity as a creative. Having been the original point of contact for GLAAD, I not only handled the accounts and project management side of the things, but I scouted and liaised with the artists themselves, and in turn created a card myself that honoured my sister’s bisexuality.",
-      textTwo:
-        "I was also the Art Director on the project, meaning I was across all aspects of making the final film, from concepting to storyboarding, sourcing assets and editing the final film for GLAAD’s channels - even creating the SFX myself from a trusted pair of red Dahle scissors - and recording and directing the VO and music composition.",
-      textThree:
-        "All in all it was a huge task, but something I am still to this day, super proud of achieving - opening up self expression to everyone on Valentine’s Day.",
-    },
-  },
-  {
-    title: "ISS WIE DU BIST",
-    company: "Crowd Farming",
-    url: "iss-wie-du-bist",
-    bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_03_qd3rc2.png",
-    videoUrl:
-      "https://res.cloudinary.com/daolun2ab/video/upload/v1645525034/iss-wie-du-bist/IssWieDuBist___CrowdFarming___2021_rgsbfs.mp4",
-    bigPicture:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979293/iss-wie-du-bist/Crowd_Farming_Header_Left_epftto.jpg",
-    smallPicture:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1652009810/iss-wie-du-bist/Crowd_Farming_Header_Right_qg4yx7.png",
-    brief: {
-      textOne:
-        "Launching a new brand in a new country is always tough, but add in the fact we had 22 days from concept sign off to the first asset supply date, it was no easy feet.",
-      textTwo:
-        "We were tasked to launch Crowd Farming to the German audience - with a focus on shifting the seasonal Avocado and Orange produce the farms had whilst the campaign was live. We had a full 360 campaign to create; 30’ TV spot, static and moving OOH, and static and moving social media assets.",
-    },
-    idea: {
-      textOne:
-        "The campaign concept combined humour to create the #IssWieDuBist (You are what you eat) campaign, encouraging shoppers to buy smart and sustainable, whilst drawing on comparisons between human and fruity behaviour.",
-      textTwo:
-        "Our four key words - Natural, Fearless, Combative and Direct - were the adjectives that correlated to both the produce and the audience we were appealing to.",
-      textThree:
-        "The TV spot uses charming moments and playful visual comparisons between man and fruit, in a split screen ad that follows the journey of the produce from seed to the consumers hands.",
-    },
-    role: {
-      textOne:
-        "Leading the team creatively, I worked at the lead Art Director on the project - working across initial concepts & refinement, then taking the lead on bringing the film and campaign to life - alongside my Director Ale Ruiz-Zorilla - creatively producing and finally designing & art working all the final print and DOOH assets.",
-      textTwo:
-        "It’s easy to say that my hands touched every asset of the campaign.",
-      textThree:
-        "In this project I had to excel in a leadership position, due to the lack of experience for the client (being a start up). I always greeting them with patience and guided them through each part of the project’s process both professionally and compassionately. Something which I thoroughly enjoyed. My previous experience in creative production proved invaluable in this campaign too, as I was fast to react to changes in pre-production, on set and in post - meaning we met our 22 day deadline and launched on time.",
-    },
-    collageImages: {
-      urlOne:
-        "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_01_k5otsw.png",
-      urlTwo:
-        "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_02_vgwhhs.png",
-      urlThree:
-        "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_03_qd3rc2.png",
-      urlFour:
-        "https://res.cloudinary.com/daolun2ab/image/upload/v1643912418/iss-wie-du-bist/Photo_Collage_04_wot7fn.jpg",
-    },
-  },
-  {
     title: "GOOD MORNINGS",
     company: "Wholey Organics",
     url: "good-mornings",
     bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912552/wholey/01_DSC_5037_dlbdea.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1644345791/Landing%20Page/02_SA702479_copy_wadqyv.jpg",
     brief: {
       textOne:
         "Wholey are a food start in Berlin who focus on making a healthy, vegan breakfast… fun! They are a warm team with a big heart and even bigger breakfast tables - offering everything from frozen smoothie bowls to nut butters.",
@@ -234,82 +310,6 @@ const projects = [
         "I shot a multitude of different assets for different purposes, always concepting and shooting myself, and having a small team for food styling and studio set up. Christmas campaigns, always on photo content, product images for social media and the web store are all to name but a few things I created for the brand.",
       textThree:
         "My love for photography has continued and I am now a contributor to Getty Images, and take freelance work in my spare time - my site can be seen ",
-    },
-  },
-  {
-    title: "OWN GOOD FOOD",
-    company: "Beets & Roots",
-    url: "own-good-food",
-    bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1644345767/Landing%20Page/02_2021_08_beets_roots_25_Tom_Wideangle_218_e6q84f.jpg",
-    videoUrl:
-      "https://res.cloudinary.com/daolun2ab/video/upload/v1645525374/own%20good%20food/TM210901PR1600_Beets_Roots_NoCarbon_v19_z8mbsm.mp4",
-    bigPicture:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1649169850/own%20good%20food/B_R_TOM_GIF_V01_hxioac.gif",
-    smallPicture:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1644137445/own%20good%20food/_Slider%20in%20middle%20of%20page/01_2021_08_beets_roots_29_Veg.Chicken_Bowl_Closeup_025_qjxawy.jpg",
-    brief: {
-      textOne:
-        "Beets & roots is a lunch time staple, selling healthy and planet conscious lunch bowls to the business brains across Germany. In 2021 they were looking for investment to expand the business, approaching the agency for a crowd investing campaign that focussed on their sustainable business model and plans for growth internationally.",
-      textTwo:
-        "The campaign had to be cool, promote their new bowl, and feel exclusive to those who would financially contribute. With the key channel as Instagram, I set to work on concepting and designing a campaign worth investing in.",
-    },
-    idea: {
-      textOne:
-        "#owngoodfood perfectly blended conscious eating with the investment opportunity. It was playful, understated and sleek, with all assets developed from stylish photography of the newest store in Frankfurt, and the delicious new bowl on offer. I paired the flash style statics with funky animation, to create a clean yet colourful look and feel that teased the everyday investor, whilst still feeling a part of the current branding.",
-    },
-    success: {
-      textOne:
-        "The investment campaign broke boundaries as it hit its goal of 1,111,000€ in just 22 days. With such a success the #owngoodfood bowl stayed on the menu, now not only for investors but also to the rest of the public as a celebration and ode to success.",
-      textTwo:
-        "Additionally, some key design elements were carried on through the social media of Beets & Roots, including the colourful flash style photography and the editorial split screen design.",
-    },
-    role: {
-      textOne:
-        "At the time of the campaign, I worked as the lead Art Director on the project, creatively guiding the look and feel; concepting assets and spearheading creative production. Working closely with my photographer photographer John Brömstrup, I built the campaign and guided it to its success throughout 2021.",
-      textTwo:
-        "This project required me to really step up and lead the team from start to finish, in the office, on set and after the launch - with me being the consistent figure across the entire project period. I had to cover staff sickness due to corona and play on my many strengths across the project process.",
-    },
-    collageImages: {
-      urlOne:
-        "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_07_Wide3_585_ekgfzn.png",
-      urlTwo:
-        "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_04_PickUp_405_u5t0qg.png",
-      urlThree:
-        "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_21_FetaBowl_071_p4xrhz.png",
-      urlFour:
-        "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_30_Deconstructed2_0085_xmrdpa.png",
-    },
-  },
-  {
-    title: "CORONA PERSONA",
-    company: "Midi",
-    url: "corona-persona",
-    videoUrl:
-      "https://res.cloudinary.com/daolun2ab/video/upload/v1645462088/Midi%20Corona%20Persona/Website_220221_skipt9.mov",
-    bannerImage:
-      "https://res.cloudinary.com/daolun2ab/image/upload/v1645462024/Midi%20Corona%20Persona/03_PNG/Achtsame_l1bhe1.png",
-    brief: {
-      textOne:
-        "Midi approached the agency for a campaign that would support the sense study they were conducting amidst corona. The project turned into something much bigger with the initial brief consisting of illustrative personas that would derive from the study itself, accompanying social media assets, and finally an online quiz that supported interactions with the study.",
-      textTwo:
-        "All of which was to be held by a look and feel we created, which still worked in the realms of the Midi brand, but stood alone in its own right visually. I soon got to work as the Lead Art Director on the project.",
-    },
-    idea: {
-      textOne:
-        "My focus for the campaign was the voices and opinions of the people in the study - I wanted humanity and authenticity to flow throughout the illustrative personas and the campaign itself. To do this, I incorporated a textural element to each persona that added to the definition that was given to them. ",
-      textTwo:
-        "I built the personas with illustrator Phillips Seefeldt, discussing each characteristic and exaggerated body parts that might further denote the ‘terms’ assigned to each persona - taking a naive perspective on the illustration style, we created 8 personas that showcased the vulnerability and feelings amidst the pandemic.",
-      textThree:
-        "I continued to work on the campaign look and feel, focussing on blue and purple tones in a typographic manner, in order to complement the vibrant illustrative personas. Typographic ‘rules’ were brought in and were carried throughout the social media, printed study design and the supporting print material that later followed the campaign.",
-    },
-    success: {
-      textOne:
-        "The project started small and simply grew as the months went by. Midi were so overwhelmingly happy with the CI that I built and the personas that were created (they were the first design element we built), they wanted more and more supporting assets. We designed the final live presentation and followed up the campaign with a printed poster package which were distributed across the Midi network and explored the personas in more detail.",
-    },
-    role: {
-      textOne:
-        "Once again, I concepted and led the design and visuals on the project, later taking the reigns on outsourcing some designing to the juniors due to a clash in project timings (Corona Persona VS Crowd Farming) as a way to ensure the project was completed for the live event. Again, my flare and design ideas can be felt across every asset as I oversaw everything for the campaign from start to finish.",
     },
   },
 ];

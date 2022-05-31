@@ -8,6 +8,7 @@ export default function Card({ project }) {
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
+            draggable={false}
             layout={"fill"}
             alt={`${project.title} image`}
             src={project.bannerImage}

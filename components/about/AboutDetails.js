@@ -12,6 +12,7 @@ export default function AboutDetails() {
           <div className={styles.link}>
             <span>
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}

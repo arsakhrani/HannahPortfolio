@@ -31,6 +31,7 @@ export default function GalleryAndText() {
     <div className={styles.container}>
       <div className={styles.galleryContainer}>
         <video
+          preload="auto"
           src={videoSource}
           alt={"Tik Tok on phone mock up"}
           controls={false}

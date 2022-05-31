@@ -35,6 +35,11 @@
   align-items: center;
   font-size: 1rem;
   z-index: 1;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .carouselContainer {
@@ -42,6 +47,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .scrollerContainer {

@@ -23,6 +23,8 @@ export default function VideoAndQuote({ quote, url }) {
       />
       <div className={styles.quoteContainer}>
         <Image
+          loading={"eager"}
+          draggable={false}
           objectFit={"contain"}
           layout={"fill"}
           src={quote}

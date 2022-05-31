@@ -1,11 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import styles from "./PhotographyDetails.module.css";
 import PhotographyDetailsText from "./PhotographyDetailsText";
 
 export default function PhotographyDetails() {
-  const [textToShow, setTextToShow] = useState("overview");
-
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>PHOTOGRAPHY</h1>
@@ -15,64 +14,50 @@ export default function PhotographyDetails() {
         </p>
         <div className={styles.linkContainer}>
           <div className={styles.link}>
-            <span
-              onClick={() => setTextToShow("overview")}
-              style={{ cursor: "pointer" }}
-            >
+            <span style={{ cursor: "pointer" }}>
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}
                 width={15}
               />
-              <span
-                style={{ color: textToShow === "overview" && "#FD5D50" }}
-                className={styles.linkText}
-              >
+              <span style={{ color: "#FD5D50" }} className={styles.linkText}>
                 OVERVIEW
               </span>
             </span>
           </div>
-          <div className={styles.link}>
-            <span
-              onClick={() => setTextToShow("getty")}
-              style={{ cursor: "pointer" }}
-            >
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.gettyimages.de/search/photographer?photographer=Hannah%20Cunningham"
+            className={styles.link}
+          >
+            <span style={{ cursor: "pointer" }}>
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}
                 width={15}
               />
-              <span
-                style={{ color: textToShow === "getty" && "#FD5D50" }}
-                className={styles.linkText}
-              >
-                GETTY
-              </span>
+              <span className={styles.linkText}>GETTY</span>
             </span>
-          </div>
-          <div className={styles.link}>
-            <span
-              onClick={() => setTextToShow("book")}
-              style={{ cursor: "pointer" }}
-            >
+          </a>
+          <Link passHref={true} href={"/contact"} className={styles.link}>
+            <span style={{ cursor: "pointer" }}>
               <Image
+                draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
                 height={15}
                 width={15}
               />
-              <span
-                style={{ color: textToShow === "book" && "#FD5D50" }}
-                className={styles.linkText}
-              >
-                BOOK ME
-              </span>
+              <span className={styles.linkText}>BOOK ME</span>
             </span>
-          </div>
+          </Link>
         </div>
-        <PhotographyDetailsText textType={textToShow} />
+        <PhotographyDetailsText />
       </div>
     </div>
   );

@@ -39,6 +39,7 @@ export default function PhotoCarousel({ about }) {
       >
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -50,6 +51,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -61,6 +63,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -72,6 +75,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -83,6 +87,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -94,6 +99,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -105,6 +111,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -116,6 +123,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -127,6 +135,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -138,6 +147,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -149,6 +159,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -160,6 +171,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -171,6 +183,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -182,6 +195,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}
@@ -193,6 +207,7 @@ export default function PhotoCarousel({ about }) {
         </div>
         <div className={styles.imageContainer}>
           <Image
+            loading={"eager"}
             draggable={false}
             objectFit={"cover"}
             alt={"food photography"}

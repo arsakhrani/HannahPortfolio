@@ -9,13 +9,13 @@ import Press from "../components/project/press/Press";
 export default function aColorfulLife() {
   return (
     <div>
-      <Details project={projects[2]} />
+      <Details project={projects[6]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>
-        <VideoPlayer url={projects[2].videoUrl} />
-        <FullViewPicture url={projects[2].fullViewPicture} />
-        <FullViewPicture contain={true} url={projects[2].fullViewPictureTwo} />
-        <Collage project="colorful life" images={projects[2].collageImages} />
+        <VideoPlayer url={projects[6].videoUrl} />
+        <FullViewPicture url={projects[6].fullViewPicture} />
+        <FullViewPicture contain={true} url={projects[6].fullViewPictureTwo} />
+        <Collage project="colorful life" images={projects[6].collageImages} />
         <Press logoCount={7} projectName={"colorful life"} />
         <Footer projectPage={true} />
       </div>

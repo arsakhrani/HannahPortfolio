@@ -39,6 +39,7 @@ export default function SketchCarousel({}) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             objectFit={"contain"}
             draggable={false}
             layout={"fill"}
@@ -53,6 +54,7 @@ export default function SketchCarousel({}) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             objectFit={"contain"}
             draggable={false}
             layout={"fill"}
@@ -67,6 +69,7 @@ export default function SketchCarousel({}) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             objectFit={"contain"}
             draggable={false}
             layout={"fill"}
@@ -81,6 +84,7 @@ export default function SketchCarousel({}) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             objectFit={"contain"}
             draggable={false}
             layout={"fill"}
@@ -95,6 +99,7 @@ export default function SketchCarousel({}) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             objectFit={"contain"}
             draggable={false}
             layout={"fill"}
@@ -109,6 +114,7 @@ export default function SketchCarousel({}) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             objectFit={"contain"}
             draggable={false}
             layout={"fill"}
@@ -123,6 +129,7 @@ export default function SketchCarousel({}) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             objectFit={"contain"}
             draggable={false}
             layout={"fill"}
@@ -137,6 +144,7 @@ export default function SketchCarousel({}) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             objectFit={"contain"}
             draggable={false}
             layout={"fill"}

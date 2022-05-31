@@ -2,20 +2,15 @@
   width: 100%;
   height: 100vh;
   padding: 5rem 1.5rem;
-}
-
-.fullScreenContainer {
-  position: relative;
-  right: 1.6rem;
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .videoPlayer {
   height: 100%;
-  width: 100%;
-  object-fit: cover;
+  width: auto;
+  object-fit: contain;
   cursor: pointer;
   z-index: 4;
+  justify-self: center;
 }

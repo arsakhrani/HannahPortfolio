@@ -16,38 +16,38 @@ export default function PhotographyCollage({ section }) {
   useEffect(() => {
     const surfStyle = {
       imageOne: {
-        left: "3rem",
         top: "-5rem",
+        left: "4.5rem",
       },
       imageTwo: {
         top: "8.7rem",
         right: "5rem",
       },
       imageThree: {
-        top: "38.5rem",
-        left: "13.5rem",
+        top: imageOneWidth / imageOneRatio - 60,
+        left: "14rem",
       },
       imageFour: {
-        top: "38.5rem",
+        top: imageOneWidth / imageOneRatio - 60,
         right: "5rem",
       },
     };
 
     const foodStyle = {
       imageOne: {
-        left: "7rem",
         top: "-5rem",
+        left: "7rem",
       },
       imageTwo: {
         top: "19.3rem",
         right: "7rem",
       },
       imageThree: {
-        top: "45.5rem",
+        top: imageOneWidth / imageOneRatio - 60,
         left: "7rem",
       },
       imageFour: {
-        top: "45.5rem",
+        top: imageOneWidth / imageOneRatio - 60,
         right: "7rem",
       },
     };
@@ -66,7 +66,7 @@ export default function PhotographyCollage({ section }) {
 
     section === "surf" && setStyle(surfStyle);
     section === "food" && setStyle(foodStyle);
-  }, [imageOneWidth, imageFourWidth, section]);
+  }, [imageOneWidth, imageFourWidth, imageOneRatio, section]);
 
   return (
     <div
@@ -76,6 +76,9 @@ export default function PhotographyCollage({ section }) {
       <div>
         <div style={style.imageOne} className={styles.image}>
           <Image
+            preload
+            quality={100}
+            draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageOneRatio(naturalWidth / naturalHeight)
             }
@@ -91,6 +94,9 @@ export default function PhotographyCollage({ section }) {
         </div>
         <div style={style.imageTwo} className={styles.image}>
           <Image
+            preload
+            quality={100}
+            draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageTwoRatio(naturalWidth / naturalHeight)
             }
@@ -106,6 +112,9 @@ export default function PhotographyCollage({ section }) {
         </div>
         <div style={style.imageThree} className={styles.image}>
           <Image
+            preload
+            quality={100}
+            draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageThreeRatio(naturalWidth / naturalHeight)
             }
@@ -121,6 +130,9 @@ export default function PhotographyCollage({ section }) {
         </div>
         <div style={style.imageFour} className={styles.image}>
           <Image
+            preload
+            quality={100}
+            draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageFourRatio(naturalWidth / naturalHeight)
             }
@@ -129,8 +141,8 @@ export default function PhotographyCollage({ section }) {
             alt={"Collage Image 4"}
             src={
               section === "surf"
-                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1649423613/Photography/DSC_7916_COMPRESSED_rbjoik.jpg"
-                : "https://res.cloudinary.com/daolun2ab/image/upload/v1645524047/Photography/DSC_6308-2_qkma8u.jpg"
+                ? "https://res.cloudinary.com/daolun2ab/image/upload/v1653830285/Photography/DSC_7916_CROP_fnl2qc.png"
+                : "https://res.cloudinary.com/daolun2ab/image/upload/v1653830290/Photography/DSC_6308-2_CROP_qb88sm.png"
             }
           />
         </div>

@@ -43,6 +43,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -58,6 +59,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -73,6 +75,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -88,6 +91,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -103,6 +107,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -118,6 +123,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -133,6 +139,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -148,6 +155,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -163,6 +171,7 @@ export default function PhoneCarousel({ selfie }) {
           className={styles.imageContainer}
         >
           <Image
+            loading={"eager"}
             draggable={false}
             layout={"fill"}
             alt={"mock-up picture on phone"}
@@ -179,6 +188,7 @@ export default function PhoneCarousel({ selfie }) {
             className={styles.imageContainer}
           >
             <Image
+              loading={"eager"}
               draggable={false}
               layout={"fill"}
               alt={"mock-up picture on phone"}

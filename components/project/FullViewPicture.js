@@ -5,6 +5,8 @@ export default function FullViewPicture({ url, contain }) {
   return (
     <div className={styles.container}>
       <Image
+        quality={100}
+        draggable={false}
         layout={"fill"}
         alt={"Feature Picture"}
         src={url}

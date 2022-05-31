@@ -11,6 +11,7 @@ export default function GettyFooter({}) {
         href="https://www.gettyimages.de/search/photographer?photographer=Hannah%20Cunningham"
       >
         <Image
+          draggable={false}
           src={"/assets/icons/bullet.svg"}
           alt={"bullet-point"}
           height={15}
@@ -18,6 +19,7 @@ export default function GettyFooter({}) {
         />
         <span className={styles.linkText}> VISIT GETTY SITE HERE </span>
         <Image
+          draggable={false}
           src={"/assets/icons/bullet.svg"}
           alt={"bullet-point"}
           height={15}

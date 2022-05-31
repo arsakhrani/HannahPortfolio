@@ -9,15 +9,15 @@ import Press from "../components/project/press/Press";
 export default function issWieDuBist() {
   return (
     <div>
-      <Details project={projects[4]} />
+      <Details project={projects[0]} />
       <Footer projectPage={true} detailsArea={true} />
       <Footer />
-      <VideoPlayer url={projects[4].videoUrl} />
+      <VideoPlayer url={projects[0].videoUrl} />
       <PictureAndPicture
-        bigPicture={projects[4].bigPicture}
-        smallPicture={projects[4].smallPicture}
+        bigPicture={projects[0].bigPicture}
+        smallPicture={projects[0].smallPicture}
       />
-      <Collage project="iss wie du bist" images={projects[4].collageImages} />
+      <Collage project="iss wie du bist" images={projects[0].collageImages} />
       <Press logoCount={2} projectName={"iss wie du bist"} />
     </div>
   );

@@ -36,6 +36,8 @@ export default function PictureAndPicture({
     <div className={styles.container}>
       <div className={styles.bigPictureContainer}>
         <Image
+          quality={100}
+          draggable={false}
           objectFit={"cover"}
           layout={"fill"}
           src={bigPicture}
@@ -48,6 +50,7 @@ export default function PictureAndPicture({
       </div>
       <div className={styles.smallPictureContainer}>
         <Image
+          draggable={false}
           objectFit={"cover"}
           layout={"fill"}
           src={ownGoodFood ? imageSource : smallPicture}

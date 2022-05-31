@@ -9,16 +9,16 @@ import Press from "../components/project/press/Press";
 export default function ownGoodFood() {
   return (
     <div>
-      <Details project={projects[6]} />
+      <Details project={projects[4]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>
-        <VideoPlayer url={projects[6].videoUrl} />
+        <VideoPlayer url={projects[4].videoUrl} />
         <PictureAndPicture
           ownGoodFood={true}
-          bigPicture={projects[6].bigPicture}
-          smallPicture={projects[6].smallPicture}
+          bigPicture={projects[4].bigPicture}
+          smallPicture={projects[4].smallPicture}
         />
-        <Collage project={"own good food"} images={projects[6].collageImages} />
+        <Collage project={"own good food"} images={projects[4].collageImages} />
         <Press logoCount={5} projectName={"own good food"} />
         <Footer projectPage={true} />
       </div>
