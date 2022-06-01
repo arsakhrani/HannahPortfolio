@@ -70,3 +70,17 @@
   border-bottom: 2px solid #fd5d50;
   cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+  .imageContainer {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .imageContainer {
+    width: 80vw;
+    height: 80vw;
+  }
+}

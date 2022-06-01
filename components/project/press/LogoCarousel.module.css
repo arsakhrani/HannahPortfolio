@@ -22,3 +22,10 @@
   height: 100%;
   width: 100%;
 }
+
+@media (max-width: 650px) {
+  .logoContainer {
+    width: 40vw;
+    height: 40vw;
+  }
+}

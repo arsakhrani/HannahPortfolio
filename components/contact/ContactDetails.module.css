@@ -37,3 +37,49 @@
 .linkText {
   padding-left: 1em;
 }
+
+@media (max-width: 719px) {
+  .container {
+    border-top: 2px solid black;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "company"
+      "links"
+      "brief";
+  }
+
+  .linkContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin-bottom: 2em;
+  }
+
+  .linkText {
+    position: relative;
+    bottom: 3px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .linkText {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .linkText {
+    padding-left: 0.2em;
+  }
+}

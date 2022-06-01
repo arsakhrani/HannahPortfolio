@@ -1,10 +1,15 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./ContactDetails.module.css";
 import ContactDetailsText from "./ContactDetailsText";
 
 export default function ContactDetails() {
   const [textToShow, setTextToShow] = useState("email");
+  const [vw, setVw] = useState(0);
+
+  useEffect(() => {
+    setVw(window.innerWidth);
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -23,8 +28,8 @@ export default function ContactDetails() {
                 draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
-                height={15}
-                width={15}
+                height={vw > 450 ? 15 : 12}
+                width={vw > 450 ? 15 : 12}
               />
               <span
                 style={{ color: textToShow === "email" && "#FD5D50" }}
@@ -43,8 +48,8 @@ export default function ContactDetails() {
                 draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
-                height={15}
-                width={15}
+                height={vw > 450 ? 15 : 12}
+                width={vw > 450 ? 15 : 12}
               />
               <span
                 style={{ color: textToShow === "mobile" && "#FD5D50" }}
@@ -63,8 +68,8 @@ export default function ContactDetails() {
                 draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
-                height={15}
-                width={15}
+                height={vw > 450 ? 15 : 12}
+                width={vw > 450 ? 15 : 12}
               />
               <span
                 style={{ color: textToShow === "instagram" && "#FD5D50" }}
@@ -83,8 +88,8 @@ export default function ContactDetails() {
                 draggable={false}
                 src={"/assets/icons/bullet.svg"}
                 alt={"bullet-point"}
-                height={15}
-                width={15}
+                height={vw > 450 ? 15 : 12}
+                width={vw > 450 ? 15 : 12}
               />
               <span
                 style={{ color: textToShow === "linkedin" && "#FD5D50" }}

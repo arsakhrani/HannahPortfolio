@@ -78,3 +78,49 @@
 .scrollBar:active {
   cursor: grabbing;
 }
+
+@media (max-width: 650px) {
+  .clickToViewContainer {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .scrollerContainer {
+    height: 20vh;
+  }
+
+  .carouselContainer {
+    height: auto;
+  }
+
+  .headingContainer {
+    height: auto;
+  }
+
+  .clickToViewContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .scrollableArea {
+    grid-template-columns: 1fr;
+  }
+
+  .headingContainer {
+    justify-content: flex-start;
+    margin-left: 6rem;
+  }
+
+  .clickToViewContainer {
+    display: flex;
+    top: 15vw;
+    left: 17vw;
+    height: 25vw;
+    width: 25vw;
+    font-size: 2.5rem;
+  }
+}

@@ -8,8 +8,9 @@
 .showCase {
   position: relative;
   top: 0;
-  left: 0;
+  left: -10px;
   height: 100%;
+  width: 100vw;
 }
 
 .card {
@@ -28,6 +29,69 @@
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translate(130px, -50%);
+  transform: translate(200px, -50%);
   transition: transform 0.3s;
+}
+
+@media (max-width: 719px) {
+  .container {
+    border: none;
+  }
+}
+
+@media (max-width: 1420px) {
+  .card {
+    height: 50%;
+  }
+
+  .cardPush {
+    height: 50%;
+    transform: translate(115px, -50%);
+  }
+}
+
+@media (max-width: 1300px) {
+  .card {
+    height: 60%;
+    aspect-ratio: 0.6 / 1;
+  }
+
+  .cardPush {
+    height: 60%;
+    aspect-ratio: 0.6 / 1;
+    transform: translate(75px, -50%);
+  }
+}
+
+@media (max-width: 1251px) {
+  .showCase {
+    overflow-x: auto;
+  }
+
+  .card {
+    height: 65%;
+    aspect-ratio: 0.79 / 1;
+  }
+
+  .cardPush {
+    height: 65%;
+    aspect-ratio: 0.79 / 1;
+    transform: translate(200px, -50%);
+  }
+}
+
+@media (max-width: 719px) {
+  .card {
+    height: 85%;
+  }
+
+  .cardPush {
+    height: 85%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .showCase {
+    overflow-x: hidden;
+  }
 }

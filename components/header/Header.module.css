@@ -13,3 +13,9 @@
 .changeColor {
   transition: all linear 0.15s;
 }
+
+@media (max-width: 719px) {
+  .container {
+    display: none;
+  }
+}

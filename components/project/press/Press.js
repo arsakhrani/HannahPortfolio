@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Press.module.css";
 import LogoCarousel from "./LogoCarousel";
 import {
@@ -16,10 +16,16 @@ import {
 export default function Press({ about, projectName, logoCount }) {
   const [scrollBarPosition, setScrollBarPosition] = useState(0);
   const [isScrollActive, setIsScrollActive] = useState(false);
+  const [vw, setVw] = useState(0);
+
+  useEffect(() => {
+    setVw(window.innerWidth);
+  }, []);
 
   const moveScroll = (e) => {
     if (isScrollActive) {
-      const position = (e.clientX - window.innerWidth * 0.1) * 0.9;
+      const position =
+        ((e.clientX || e.touches[0].clientX) - window.innerWidth * 0.1) * 0.9;
       const upperLimit = window.innerWidth * 0.72;
       if (position >= 0 && position < upperLimit)
         setScrollBarPosition(position);
@@ -32,7 +38,10 @@ export default function Press({ about, projectName, logoCount }) {
         setIsScrollActive(false);
       }}
       onMouseLeave={() => setIsScrollActive(false)}
-      onMouseMove={(e) => moveScroll(e)}
+      onMouseMove={moveScroll}
+      onTouchMove={moveScroll}
+      onTouchStart={() => setIsScrollActive(true)}
+      onTouchEnd={() => setIsScrollActive(false)}
       className={styles.container}
       style={{ cursor: isScrollActive && "grabbing" }}
     >
@@ -40,15 +49,25 @@ export default function Press({ about, projectName, logoCount }) {
         style={{
           transform:
             logoCount === 6
-              ? `translate(-${scrollBarPosition * 1.33}px, 0px)`
+              ? `translate(-${
+                  scrollBarPosition * (vw > 500 ? 1.33 : 2.56)
+                }px, 0px)`
               : logoCount === 7
-              ? `translate(-${scrollBarPosition * 1.68}px, 0px)`
+              ? `translate(-${
+                  scrollBarPosition * (vw > 500 ? 1.68 : 3.24)
+                }px, 0px)`
               : logoCount === 5
-              ? `translate(-${scrollBarPosition}px, 0px)`
+              ? `translate(-${
+                  scrollBarPosition * (vw > 500 ? 1 : 1.93)
+                }px, 0px)`
               : logoCount === 4
-              ? `translate(-${scrollBarPosition * 0.67}px, 0px)`
+              ? `translate(-${
+                  scrollBarPosition * (vw > 500 ? 0.67 : 1.29)
+                }px, 0px)`
               : logoCount === 3
-              ? `translate(-${scrollBarPosition * 0.33}px, 0px)`
+              ? `translate(-${
+                  scrollBarPosition * (vw > 500 ? 0.33 : 0.64)
+                }px, 0px)`
               : null,
         }}
         className={styles.scrollableArea}

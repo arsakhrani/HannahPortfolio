@@ -13,7 +13,8 @@ export default function PhotoCarousel({ about }) {
 
   const moveScroll = (e) => {
     if (isScrollActive) {
-      const position = (e.clientX - viewWidth * 0.1) * 0.9;
+      const position =
+        ((e.clientX || e.touches[0].clientX) - viewWidth * 0.1) * 0.9;
       const upperLimit = viewWidth * 0.72;
       if (position >= 0 && position < upperLimit)
         setScrollBarPosition(position);
@@ -26,7 +27,10 @@ export default function PhotoCarousel({ about }) {
         setIsScrollActive(false);
       }}
       onMouseLeave={() => setIsScrollActive(false)}
-      onMouseMove={(e) => moveScroll(e)}
+      onMouseMove={moveScroll}
+      onTouchMove={moveScroll}
+      onTouchStart={() => setIsScrollActive(true)}
+      onTouchEnd={() => setIsScrollActive(false)}
       className={styles.container}
       style={{ cursor: isScrollActive && "grabbing" }}
     >

@@ -76,7 +76,7 @@ export default function PhotographyCollage({ section }) {
       <div>
         <div style={style.imageOne} className={styles.image}>
           <Image
-            preload
+            preload="auto"
             quality={100}
             draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
@@ -94,7 +94,7 @@ export default function PhotographyCollage({ section }) {
         </div>
         <div style={style.imageTwo} className={styles.image}>
           <Image
-            preload
+            preload="auto"
             quality={100}
             draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
@@ -112,7 +112,7 @@ export default function PhotographyCollage({ section }) {
         </div>
         <div style={style.imageThree} className={styles.image}>
           <Image
-            preload
+            preload="auto"
             quality={100}
             draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
@@ -130,7 +130,7 @@ export default function PhotographyCollage({ section }) {
         </div>
         <div style={style.imageFour} className={styles.image}>
           <Image
-            preload
+            preload="auto"
             quality={100}
             draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
