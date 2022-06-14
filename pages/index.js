@@ -17,17 +17,17 @@ export default function Home() {
   const showcaseCount = projects.length;
 
   const changePosition = (e) => {
-    const mousePosition = (e.clientX / window.innerWidth) * 1.3 - 0.2;
-    if (mousePosition > 1) {
-      setPosition(1);
-    } else if (mousePosition < 0) {
-      setPosition(0);
-    } else {
-      setPosition(mousePosition);
+    if (vw > 900) {
+      const mousePosition = (e.clientX / window.innerWidth) * 1.3 - 0.2;
+      if (mousePosition > 1) {
+        setPosition(1);
+      } else if (mousePosition < 0) {
+        setPosition(0);
+      } else {
+        setPosition(mousePosition);
+      }
     }
   };
-
-  console.log(vw);
 
   const index = Math.round(position * showcaseCount * 0.85);
 
@@ -37,16 +37,14 @@ export default function Home() {
         <Head>
           <title>Hannah</title>
         </Head>
-        <div
-          //onTouchStart={changePosition}
-          onPointerMove={changePosition}
-          className={styles.showCase}
-        >
+        <div onPointerMove={changePosition} className={styles.showCase}>
           <div>
             {projects.map((project, i) => (
               <div
-                style={{ left: (vw > 500 ? 135 : 400) * i, zIndex: 10 - i }}
-                className={i + 1 > index ? styles.cardPush : styles.card}
+                style={{ left: (vw > 900 ? 135 : 450) * i, zIndex: 10 - i }}
+                className={
+                  i + 1 > index && vw > 900 ? styles.cardPush : styles.card
+                }
                 key={i}
               >
                 <Card project={project} />

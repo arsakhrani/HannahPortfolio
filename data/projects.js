@@ -43,6 +43,12 @@ const projects = [
       urlFour:
         "https://res.cloudinary.com/daolun2ab/image/upload/v1643912418/iss-wie-du-bist/Photo_Collage_04_wot7fn.jpg",
     },
+    mobileCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_01_k5otsw.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_02_vgwhhs.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652009724/iss-wie-du-bist/Photo_Collage_03_qd3rc2.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912418/iss-wie-du-bist/Photo_Collage_04_wot7fn.jpg",
+    ],
   },
   {
     title: "5 YEAR OLD SELFIE",
@@ -123,6 +129,12 @@ const projects = [
       urlFour:
         "https://res.cloudinary.com/daolun2ab/image/upload/v1651842713/cold-water/Image_Collage_04_larn5y.png",
     },
+    mobileCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1651842712/cold-water/Image_Collage_01_xw4gkh.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1651842712/cold-water/Image_Collage_02_n3eoys.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1651842101/cold-water/Image_Collage_03_zvcwnk.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1651842713/cold-water/Image_Collage_04_larn5y.png",
+    ],
   },
   {
     title: "CORONA PERSONA",
@@ -199,6 +211,12 @@ const projects = [
       urlFour:
         "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_30_Deconstructed2_0085_xmrdpa.png",
     },
+    mobileCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_07_Wide3_585_ekgfzn.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_04_PickUp_405_u5t0qg.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_21_FetaBowl_071_p4xrhz.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1652010828/own%20good%20food/_Other%20photos/2021_08_beets_roots_30_Deconstructed2_0085_xmrdpa.png",
+    ],
   },
   {
     title: "EVERY VALENTINE'S DAY",
@@ -282,6 +300,12 @@ const projects = [
       urlFour:
         "https://res.cloudinary.com/daolun2ab/image/upload/v1649169258/a-colorful-life/ACL_GIF_Sketch_V03_hqavb3.gif",
     },
+    mobileCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1651841606/a-colorful-life/ImageCollage_01_n0wtxe.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1651841606/a-colorful-life/ImageCollage_04_xttb8t.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1651841606/a-colorful-life/ImageCollage_02_zxykeq.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1649169258/a-colorful-life/ACL_GIF_Sketch_V03_hqavb3.gif",
+    ],
   },
   {
     title: "GOOD MORNINGS",

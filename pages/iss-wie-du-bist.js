@@ -5,6 +5,7 @@ import VideoPlayer from "../components/project/VideoPlayer";
 import PictureAndPicture from "../components/project/PictureAndPicture";
 import Collage from "../components/project/Collage";
 import Press from "../components/project/press/Press";
+import MobileCarousel from "../components/project/MobileCarousel";
 
 export default function issWieDuBist() {
   return (
@@ -18,6 +19,7 @@ export default function issWieDuBist() {
         smallPicture={projects[0].smallPicture}
       />
       <Collage project="iss wie du bist" images={projects[0].collageImages} />
+      <MobileCarousel images={projects[0].mobileCarousel} />
       <Press logoCount={2} projectName={"iss wie du bist"} />
     </div>
   );

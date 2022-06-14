@@ -57,3 +57,13 @@
   bottom: 2em;
   left: 1em;
 }
+
+@media (max-width: 900px) {
+  .container {
+    height: 50vh;
+  }
+
+  .imageContainer {
+    min-height: 50vh;
+  }
+}

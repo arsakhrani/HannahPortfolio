@@ -9,6 +9,12 @@
 
 .pictureContainer {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: 40vh;
+  }
 }

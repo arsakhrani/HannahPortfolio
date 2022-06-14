@@ -26,3 +26,13 @@
   right: 2rem;
   top: 2rem;
 }
+
+@media (max-width: 750px) {
+  .container {
+    position: relative;
+    right: 1.6rem;
+    height: 50vh;
+    width: 100vw;
+    background-color: #f3f1ed;
+  }
+}

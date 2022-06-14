@@ -12,12 +12,13 @@ export default function PhotoCarousel({ about }) {
   }, []);
 
   const moveScroll = (e) => {
-    if (isScrollActive) {
-      const position =
-        ((e.clientX || e.touches[0].clientX) - viewWidth * 0.1) * 0.9;
-      const upperLimit = viewWidth * 0.72;
-      if (position >= 0 && position < upperLimit)
-        setScrollBarPosition(position);
+    if (viewWidth > 1180) {
+      if (isScrollActive) {
+        const position = (e.clientX - viewWidth * 0.1) * 0.9;
+        const upperLimit = viewWidth * 0.72;
+        if (position >= 0 && position < upperLimit)
+          setScrollBarPosition(position);
+      }
     }
   };
 
@@ -28,11 +29,11 @@ export default function PhotoCarousel({ about }) {
       }}
       onMouseLeave={() => setIsScrollActive(false)}
       onMouseMove={moveScroll}
-      onTouchMove={moveScroll}
-      onTouchStart={() => setIsScrollActive(true)}
-      onTouchEnd={() => setIsScrollActive(false)}
       className={styles.container}
-      style={{ cursor: isScrollActive && "grabbing" }}
+      style={{
+        cursor: isScrollActive && "grabbing",
+        overflowX: viewWidth > 1180 ? "hidden" : "auto",
+      }}
     >
       <div className={styles.headerContainer}>
         <h2>{about ? "IN PICTURES" : "FOOD PHOTOGRAPHY"}</h2>
@@ -222,15 +223,17 @@ export default function PhotoCarousel({ about }) {
           />
         </div>
       </div>
-      <div className={styles.scrollBarContainer}>
-        <div className={styles.scrollBarHolder}>
-          <div
-            onMouseDown={() => setIsScrollActive(true)}
-            className={styles.scrollBar}
-            style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
-          ></div>
+      {viewWidth > 1180 && (
+        <div className={styles.scrollBarContainer}>
+          <div className={styles.scrollBarHolder}>
+            <div
+              onMouseDown={() => setIsScrollActive(true)}
+              className={styles.scrollBar}
+              style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
+            ></div>
+          </div>
         </div>
-      </div>
+      )}
       {about && (
         <a
           href="https://www.instagram.com/hannahcunny25/?hl=en"

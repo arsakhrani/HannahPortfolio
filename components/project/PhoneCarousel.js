@@ -12,11 +12,13 @@ export default function PhoneCarousel({ selfie }) {
   }, []);
 
   const moveScroll = (e) => {
-    if (isScrollActive) {
-      const position = (e.clientX - viewWidth * 0.1) * 0.9;
-      const upperLimit = viewWidth * 0.69;
-      if (position >= 0 && position < upperLimit)
-        setScrollBarPosition(position);
+    if (viewWidth > 1180) {
+      if (isScrollActive) {
+        const position = (e.clientX - viewWidth * 0.1) * 0.9;
+        const upperLimit = viewWidth * 0.69;
+        if (position >= 0 && position < upperLimit)
+          setScrollBarPosition(position);
+      }
     }
   };
 
@@ -26,9 +28,12 @@ export default function PhoneCarousel({ selfie }) {
         setIsScrollActive(false);
       }}
       onMouseLeave={() => setIsScrollActive(false)}
-      onMouseMove={(e) => moveScroll(e)}
+      onMouseMove={moveScroll}
       className={styles.container}
-      style={{ cursor: isScrollActive && "grabbing" }}
+      style={{
+        cursor: isScrollActive && "grabbing",
+        overflowX: viewWidth > 1180 ? "hidden" : "auto",
+      }}
     >
       <div
         style={{
@@ -199,15 +204,17 @@ export default function PhoneCarousel({ selfie }) {
           </div>
         )}
       </div>
-      <div className={styles.scrollerContainer}>
-        <div className={styles.scrollBarHolder}>
-          <div
-            onMouseDown={() => setIsScrollActive(true)}
-            className={styles.scrollBar}
-            style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
-          ></div>
+      {viewWidth > 1180 && (
+        <div className={styles.scrollerContainer}>
+          <div className={styles.scrollBarHolder}>
+            <div
+              onMouseDown={() => setIsScrollActive(true)}
+              className={styles.scrollBar}
+              style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
+            ></div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

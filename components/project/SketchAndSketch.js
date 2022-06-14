@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./SketchAndSketch.module.css";
 
-export default function SketchAndSketch({}) {
+export default function SketchAndSketch() {
   return (
     <div className={styles.container}>
       <div

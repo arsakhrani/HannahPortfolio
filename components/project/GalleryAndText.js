@@ -38,7 +38,7 @@ export default function GalleryAndText() {
           autoPlay={true}
           muted={true}
           loop={true}
-          style={{ height: "100vh", width: "50vw" }}
+          className={styles.videoPlayer}
         />
         <div className={styles.dotContainer}>
           <div

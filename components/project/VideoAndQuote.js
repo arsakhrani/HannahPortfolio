@@ -8,13 +8,7 @@ export default function VideoAndQuote({ quote, url }) {
   return (
     <div className={styles.container}>
       <video
-        style={{
-          objectFit: "cover",
-          cursor: "pointer",
-          height: "100vh",
-          width: "100%",
-          zIndex: 3,
-        }}
+        style={{}}
         onMouseOver={() => setShowControls(true)}
         onMouseLeave={() => setShowControls(false)}
         controls={showControls}

@@ -5,6 +5,7 @@ import VideoPlayer from "../components/project/VideoPlayer";
 import FullViewPicture from "../components/project/FullViewPicture";
 import Collage from "../components/project/Collage";
 import Press from "../components/project/press/Press";
+import MobileCarousel from "../components/project/MobileCarousel";
 
 export default function coldWater() {
   return (
@@ -15,6 +16,7 @@ export default function coldWater() {
         <VideoPlayer url={projects[2].videoUrl} />
         <FullViewPicture url={projects[2].fullViewPicture} />
         <Collage project={"cold water"} images={projects[2].collageImages} />
+        <MobileCarousel images={projects[2].mobileCarousel} />
         <Press logoCount={5} projectName={"cold water"} />
         <Footer projectPage={true} />
       </div>

@@ -4,3 +4,9 @@
   height: 100vh;
   right: 1.6rem;
 }
+
+@media (max-width: 900px) {
+  .container {
+    height: 50vh;
+  }
+}

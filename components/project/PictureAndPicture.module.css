@@ -37,3 +37,13 @@
   opacity: 0.6;
   cursor: pointer;
 }
+
+@media (max-width: 900px) {
+  .container {
+    height: 50vh;
+  }
+
+  .bigPictureContainer {
+    height: 50vh;
+  }
+}

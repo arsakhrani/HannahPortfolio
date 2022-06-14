@@ -23,12 +23,13 @@ export default function Press({ about, projectName, logoCount }) {
   }, []);
 
   const moveScroll = (e) => {
-    if (isScrollActive) {
-      const position =
-        ((e.clientX || e.touches[0].clientX) - window.innerWidth * 0.1) * 0.9;
-      const upperLimit = window.innerWidth * 0.72;
-      if (position >= 0 && position < upperLimit)
-        setScrollBarPosition(position);
+    if (vw > 1180) {
+      if (isScrollActive) {
+        const position = (e.clientX - window.innerWidth * 0.1) * 0.9;
+        const upperLimit = window.innerWidth * 0.72;
+        if (position >= 0 && position < upperLimit)
+          setScrollBarPosition(position);
+      }
     }
   };
 
@@ -39,11 +40,11 @@ export default function Press({ about, projectName, logoCount }) {
       }}
       onMouseLeave={() => setIsScrollActive(false)}
       onMouseMove={moveScroll}
-      onTouchMove={moveScroll}
-      onTouchStart={() => setIsScrollActive(true)}
-      onTouchEnd={() => setIsScrollActive(false)}
       className={styles.container}
-      style={{ cursor: isScrollActive && "grabbing" }}
+      style={{
+        cursor: isScrollActive && "grabbing",
+        overflowX: vw > 1180 ? "hidden" : "auto",
+      }}
     >
       <div
         style={{
@@ -106,7 +107,7 @@ export default function Press({ about, projectName, logoCount }) {
           {projectName === "about" && <LogoCarousel sources={aboutData} />}
         </div>
       </div>
-      {logoCount > 2 && (
+      {logoCount > 2 && vw > 1180 && (
         <div className={styles.scrollerContainer}>
           <div className={styles.scrollBarHolder}>
             <div

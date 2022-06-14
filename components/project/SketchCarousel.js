@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./SketchCarousel.module.css";
 
-export default function SketchCarousel({}) {
+export default function SketchCarousel() {
   const [scrollBarPosition, setScrollBarPosition] = useState(0);
   const [isScrollActive, setIsScrollActive] = useState(false);
   const [viewWidth, setViewWidth] = useState(0);
@@ -12,11 +12,13 @@ export default function SketchCarousel({}) {
   }, []);
 
   const moveScroll = (e) => {
-    if (isScrollActive) {
-      const position = (e.clientX - viewWidth * 0.1) * 0.9;
-      const upperLimit = viewWidth * 0.69;
-      if (position >= 0 && position < upperLimit)
-        setScrollBarPosition(position);
+    if (viewWidth > 1180) {
+      if (isScrollActive) {
+        const position = (e.clientX - viewWidth * 0.1) * 0.9;
+        const upperLimit = viewWidth * 0.69;
+        if (position >= 0 && position < upperLimit)
+          setScrollBarPosition(position);
+      }
     }
   };
 
@@ -28,7 +30,10 @@ export default function SketchCarousel({}) {
       onMouseLeave={() => setIsScrollActive(false)}
       onMouseMove={(e) => moveScroll(e)}
       className={styles.container}
-      style={{ cursor: isScrollActive && "grabbing" }}
+      style={{
+        cursor: isScrollActive && "grabbing",
+        overflowX: viewWidth > 1180 ? "hidden" : "auto",
+      }}
     >
       <div
         style={{ transform: `translate(-${scrollBarPosition * 0.8}px, 0px)` }}
@@ -155,15 +160,17 @@ export default function SketchCarousel({}) {
           />
         </div>
       </div>
-      <div className={styles.scrollerContainer}>
-        <div className={styles.scrollBarHolder}>
-          <div
-            onMouseDown={() => setIsScrollActive(true)}
-            className={styles.scrollBar}
-            style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
-          ></div>
+      {viewWidth > 1180 && (
+        <div className={styles.scrollerContainer}>
+          <div className={styles.scrollBarHolder}>
+            <div
+              onMouseDown={() => setIsScrollActive(true)}
+              className={styles.scrollBar}
+              style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
+            ></div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

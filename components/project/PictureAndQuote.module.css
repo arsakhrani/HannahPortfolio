@@ -36,3 +36,25 @@
   font-size: 2.1rem;
   color: #fd5d50;
 }
+
+@media (max-width: 900px) {
+  .container {
+    height: 50vh;
+  }
+
+  .pictureContainer {
+    height: 50vh;
+  }
+
+  .quoteContainer {
+    padding-left: 1.5rem;
+  }
+
+  .quote {
+    font-size: 2.2rem;
+  }
+
+  .subText {
+    font-size: 1.5rem;
+  }
+}
