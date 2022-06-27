@@ -36,7 +36,6 @@ export default function PictureAndPicture({
     <div className={styles.container}>
       <div className={styles.bigPictureContainer}>
         <Image
-          quality={100}
           draggable={false}
           objectFit={"cover"}
           layout={"fill"}
