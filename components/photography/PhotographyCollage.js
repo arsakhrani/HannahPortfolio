@@ -14,76 +14,44 @@ export default function PhotographyCollage({ section }) {
   const [style, setStyle] = useState({});
 
   useEffect(() => {
-    const surfStyle = {
-      imageOne: {
-        top: "-5rem",
-        left: "4.5rem",
-      },
-      imageTwo: {
-        top: "8.7rem",
-        right: "5rem",
-      },
-      imageThree: {
-        top: imageOneWidth / imageOneRatio - 60,
-        left: "14rem",
-      },
-      imageFour: {
-        top: imageOneWidth / imageOneRatio - 60,
-        right: "5rem",
-      },
-    };
+    section === "surf" && setImageOneWidth(67);
+    section === "food" && setImageOneWidth(55);
 
-    const foodStyle = {
-      imageOne: {
-        top: "-5rem",
-        left: "7rem",
-      },
-      imageTwo: {
-        top: "19.3rem",
-        right: "7rem",
-      },
-      imageThree: {
-        top: imageOneWidth / imageOneRatio - 60,
-        left: "7rem",
-      },
-      imageFour: {
-        top: imageOneWidth / imageOneRatio - 60,
-        right: "7rem",
-      },
-    };
+    section === "surf" && setImageTwoWidth(21);
+    section === "food" && setImageTwoWidth(28);
 
-    section === "surf" && setImageOneWidth(window.innerWidth * 0.67);
-    section === "food" && setImageOneWidth(window.innerWidth * 0.55);
+    section === "surf" && setImageThreeWidth(21);
+    section === "food" && setImageThreeWidth(28);
 
-    section === "surf" && setImageTwoWidth(window.innerWidth * 0.21);
-    section === "food" && setImageTwoWidth(window.innerWidth * 0.28);
-
-    section === "surf" && setImageThreeWidth(window.innerWidth * 0.21);
-    section === "food" && setImageThreeWidth(window.innerWidth * 0.28);
-
-    section === "surf" && setImageFourWidth(window.innerWidth * 0.56);
-    section === "food" && setImageFourWidth(window.innerWidth * 0.55);
-
-    section === "surf" && setStyle(surfStyle);
-    section === "food" && setStyle(foodStyle);
-  }, [imageOneWidth, imageFourWidth, imageOneRatio, section]);
+    section === "surf" && setImageFourWidth(56);
+    section === "food" && setImageFourWidth(55);
+  }, [section]);
 
   return (
     <div
-      style={{ backgroundColor: section === "surf" && "#f3f1ed" }}
+      style={{
+        backgroundColor: section === "surf" && "#f3f1ed",
+        height: section === "food" && "150vh",
+      }}
       className={styles.container}
     >
-      <div>
-        <div style={style.imageOne} className={styles.image}>
+      <div className={styles.dividerOne}>
+        <div
+          style={{
+            width: `${imageOneWidth}vw`,
+            height: `${imageOneWidth / imageOneRatio}vw`,
+            left: `${(100 - imageOneWidth - imageTwoWidth) / 2 - 1}vw`,
+          }}
+          className={styles.imageOne}
+        >
           <Image
             preload="auto"
             quality={100}
+            layout={"fill"}
             draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageOneRatio(naturalWidth / naturalHeight)
             }
-            width={imageOneWidth}
-            height={imageOneWidth / imageOneRatio}
             alt={"Collage Image 1"}
             src={
               section === "surf"
@@ -92,16 +60,22 @@ export default function PhotographyCollage({ section }) {
             }
           />
         </div>
-        <div style={style.imageTwo} className={styles.image}>
+        <div
+          style={{
+            width: `${imageTwoWidth}vw`,
+            height: `${imageTwoWidth / imageTwoRatio}vw`,
+            right: `${(100 - imageOneWidth - imageTwoWidth) / 2 - 1}vw`,
+          }}
+          className={styles.imageTwo}
+        >
           <Image
             preload="auto"
             quality={100}
+            layout={"fill"}
             draggable={false}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageTwoRatio(naturalWidth / naturalHeight)
             }
-            width={imageTwoWidth}
-            height={imageTwoWidth / imageTwoRatio}
             alt={"Collage Image 2"}
             src={
               section === "surf"
@@ -110,7 +84,16 @@ export default function PhotographyCollage({ section }) {
             }
           />
         </div>
-        <div style={style.imageThree} className={styles.image}>
+      </div>
+      <div className={styles.dividerTwo}>
+        <div
+          style={{
+            width: `${imageThreeWidth}vw`,
+            height: `${imageThreeWidth / imageThreeRatio}vw`,
+            left: `${(100 - imageThreeWidth - imageFourWidth) / 2 - 1}vw`,
+          }}
+          className={styles.imageThree}
+        >
           <Image
             preload="auto"
             quality={100}
@@ -118,8 +101,7 @@ export default function PhotographyCollage({ section }) {
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageThreeRatio(naturalWidth / naturalHeight)
             }
-            width={imageThreeWidth}
-            height={imageThreeWidth / imageThreeRatio}
+            layout={"fill"}
             alt={"Collage Image 3"}
             src={
               section === "surf"
@@ -128,16 +110,22 @@ export default function PhotographyCollage({ section }) {
             }
           />
         </div>
-        <div style={style.imageFour} className={styles.image}>
+        <div
+          style={{
+            width: `${imageFourWidth}vw`,
+            height: `${imageFourWidth / imageFourRatio}vw`,
+            right: `${(100 - imageThreeWidth - imageFourWidth) / 2 - 1}vw`,
+          }}
+          className={styles.imageFour}
+        >
           <Image
             preload="auto"
             quality={100}
             draggable={false}
+            layout={"fill"}
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageFourRatio(naturalWidth / naturalHeight)
             }
-            width={imageFourWidth}
-            height={imageFourWidth / imageFourRatio}
             alt={"Collage Image 4"}
             src={
               section === "surf"
