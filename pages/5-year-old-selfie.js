@@ -5,10 +5,14 @@ import VideoPlayer from "../components/project/VideoPlayer";
 import Press from "../components/project/press/Press";
 import PhoneCarousel from "../components/project/PhoneCarousel";
 import PictureAndQuote from "../components/project/PictureAndQuote";
+import Head from "next/head";
 
 export default function fiveYearOldSelfie() {
   return (
     <div>
+      <Head>
+        <title>5 Year Old Selfie</title>
+      </Head>
       <Details project={projects[1]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>

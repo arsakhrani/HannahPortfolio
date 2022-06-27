@@ -6,10 +6,14 @@ import FullViewPicture from "../components/project/FullViewPicture";
 import Collage from "../components/project/Collage";
 import MobileCarousel from "../components/project/MobileCarousel";
 import Press from "../components/project/press/Press";
+import Head from "next/head";
 
 export default function aColorfulLife() {
   return (
     <div>
+      <Head>
+        <title>A Colourful Life</title>
+      </Head>
       <Details project={projects[6]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>

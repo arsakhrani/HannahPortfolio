@@ -335,6 +335,23 @@ const projects = [
       textThree:
         "My love for photography has continued and I am now a contributor to Getty Images, and take freelance work in my spare time - my site can be seen ",
     },
+    photoCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643912552/wholey/01_DSC_5037_dlbdea.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979706/wholey/02_SA702479_copy_mxguox.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979714/wholey/09_DSC_3727_rsvbgx.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979723/wholey/11_kruut3_cs3rto.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979722/wholey/05_DSC_5722_km4keh.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979711/wholey/03_DSC_6049_tynigv.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979711/wholey/06_DSC_5097_zewaab.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979710/wholey/10_SA702471_copy_whulpk.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979708/wholey/12_DSC_4337_uz84xc.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979707/wholey/04_DSC_5830-2_ahbpxh.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979483/wholey/07_DSC_6308-2_sfvow1.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979476/wholey/08_DSC_5652-2_nrmjqa.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979468/wholey/14_DSC_6355-Edit_pzohef.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979465/wholey/15_DSC_4927_s3rpy3.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979465/wholey/13_DSC_6266-Edit-3_rrwtkw.jpg",
+    ],
   },
 ];
 

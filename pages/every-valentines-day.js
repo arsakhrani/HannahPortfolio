@@ -5,10 +5,14 @@ import VideoAndQuote from "../components/project/VideoAndQuote";
 import FullViewPicture from "../components/project/FullViewPicture";
 import Press from "../components/project/press/Press";
 import PhoneCarousel from "../components/project/PhoneCarousel";
+import Head from "next/head";
 
 export default function everyValentinesDay() {
   return (
     <div>
+      <Head>
+        <title>Every Valentine{"'"}s Day</title>
+      </Head>
       <Details project={projects[5]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>

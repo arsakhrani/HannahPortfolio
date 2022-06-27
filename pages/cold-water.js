@@ -6,10 +6,14 @@ import FullViewPicture from "../components/project/FullViewPicture";
 import Collage from "../components/project/Collage";
 import Press from "../components/project/press/Press";
 import MobileCarousel from "../components/project/MobileCarousel";
+import Head from "next/head";
 
 export default function coldWater() {
   return (
     <div>
+      <Head>
+        <title>Cold Water</title>
+      </Head>
       <Details project={projects[2]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>

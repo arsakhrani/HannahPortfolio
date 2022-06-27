@@ -6,10 +6,14 @@ import Press from "../components/project/press/Press";
 import SketchAndSketch from "../components/project/SketchAndSketch";
 import SketchCarousel from "../components/project/SketchCarousel";
 import FullSizeCarousel from "../components/project/FullSizeCarousel";
+import Head from "next/head";
 
 export default function coronaPersona() {
   return (
     <div>
+      <Head>
+        <title>Corona Persona</title>
+      </Head>
       <Details project={projects[3]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>

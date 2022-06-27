@@ -6,10 +6,14 @@ import PictureAndPicture from "../components/project/PictureAndPicture";
 import Collage from "../components/project/Collage";
 import Press from "../components/project/press/Press";
 import MobileCarousel from "../components/project/MobileCarousel";
+import Head from "next/head";
 
 export default function issWieDuBist() {
   return (
     <div>
+      <Head>
+        <title>Iss Wie Du Bist</title>
+      </Head>
       <Details project={projects[0]} />
       <Footer projectPage={true} detailsArea={true} />
       <Footer />
