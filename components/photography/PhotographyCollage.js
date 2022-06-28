@@ -11,7 +11,6 @@ export default function PhotographyCollage({ section }) {
   const [imageTwoWidth, setImageTwoWidth] = useState(0);
   const [imageThreeWidth, setImageThreeWidth] = useState(0);
   const [imageFourWidth, setImageFourWidth] = useState(0);
-  const [style, setStyle] = useState({});
 
   useEffect(() => {
     section === "surf" && setImageOneWidth(67);

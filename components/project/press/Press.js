@@ -16,6 +16,8 @@ import {
 export default function Press({ about, projectName, logoCount }) {
   const [scrollBarPosition, setScrollBarPosition] = useState(0);
   const [isScrollActive, setIsScrollActive] = useState(false);
+  const [hasBeenScrolled, setHasBeenScrolled] = useState(false);
+  const [intervalId, setIntervalId] = useState(null);
   const [vw, setVw] = useState(0);
 
   useEffect(() => {
@@ -25,6 +27,8 @@ export default function Press({ about, projectName, logoCount }) {
   const moveScroll = (e) => {
     if (vw > 1180) {
       if (isScrollActive) {
+        clearInterval(intervalId);
+        setHasBeenScrolled(true);
         const position = (e.clientX - window.innerWidth * 0.1) * 0.9;
         const upperLimit = window.innerWidth * 0.72;
         if (position >= 0 && position < upperLimit)
@@ -33,12 +37,30 @@ export default function Press({ about, projectName, logoCount }) {
     }
   };
 
+  const promptScroll = () => {
+    if (!isScrollActive && !hasBeenScrolled) {
+      const id = setInterval(() => {
+        setScrollBarPosition(40);
+        setTimeout(() => {
+          setScrollBarPosition(0);
+        }, 1000);
+      }, 4000);
+      setIntervalId(id);
+    }
+  };
+
+  const endPromptScroll = () => {
+    clearInterval(intervalId);
+    setIsScrollActive(false);
+  };
+
   return (
     <div
+      onMouseEnter={promptScroll}
       onMouseUp={() => {
         setIsScrollActive(false);
       }}
-      onMouseLeave={() => setIsScrollActive(false)}
+      onMouseLeave={endPromptScroll}
       onMouseMove={moveScroll}
       className={styles.container}
       style={{
@@ -113,7 +135,10 @@ export default function Press({ about, projectName, logoCount }) {
             <div
               onMouseDown={() => setIsScrollActive(true)}
               className={styles.scrollBar}
-              style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
+              style={{
+                transform: `translate(${scrollBarPosition}px, 0px)`,
+                transition: isScrollActive && "none",
+              }}
             ></div>
           </div>
         </div>

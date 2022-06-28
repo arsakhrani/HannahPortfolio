@@ -47,6 +47,7 @@
   width: 10%;
   background-color: #fd5d50;
   cursor: grab;
+  transition: all ease-in-out 0.8s;
 }
 
 .scrollBar:active {

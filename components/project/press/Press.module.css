@@ -14,7 +14,7 @@
 }
 
 .headingContainer {
-  height: 57vh;
+  height: 70vh;
   font-size: 3.6rem;
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@
 }
 
 .carouselContainer {
-  height: 57vh;
+  height: 70vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -55,7 +55,7 @@
 }
 
 .scrollerContainer {
-  height: 43vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   padding-top: 6rem;
@@ -73,6 +73,7 @@
   width: 10%;
   background-color: #fd5d50;
   cursor: grab;
+  transition: all ease-in-out 0.8s;
 }
 
 .scrollBar:active {

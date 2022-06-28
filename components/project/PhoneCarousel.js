@@ -5,6 +5,8 @@ import styles from "./PhoneCarousel.module.css";
 export default function PhoneCarousel({ selfie }) {
   const [scrollBarPosition, setScrollBarPosition] = useState(0);
   const [isScrollActive, setIsScrollActive] = useState(false);
+  const [hasBeenScrolled, setHasBeenScrolled] = useState(false);
+  const [intervalId, setIntervalId] = useState(null);
   const [viewWidth, setViewWidth] = useState(0);
 
   useEffect(() => {
@@ -14,6 +16,8 @@ export default function PhoneCarousel({ selfie }) {
   const moveScroll = (e) => {
     if (viewWidth > 1180) {
       if (isScrollActive) {
+        clearInterval(intervalId);
+        setHasBeenScrolled(true);
         const position = (e.clientX - viewWidth * 0.1) * 0.9;
         const upperLimit = viewWidth * 0.69;
         if (position >= 0 && position < upperLimit)
@@ -22,12 +26,30 @@ export default function PhoneCarousel({ selfie }) {
     }
   };
 
+  const promptScroll = () => {
+    if (!isScrollActive && !hasBeenScrolled) {
+      const id = setInterval(() => {
+        setScrollBarPosition(40);
+        setTimeout(() => {
+          setScrollBarPosition(0);
+        }, 1000);
+      }, 4000);
+      setIntervalId(id);
+    }
+  };
+
+  const endPromptScroll = () => {
+    clearInterval(intervalId);
+    setIsScrollActive(false);
+  };
+
   return (
     <div
+      onMouseEnter={promptScroll}
       onMouseUp={() => {
         setIsScrollActive(false);
       }}
-      onMouseLeave={() => setIsScrollActive(false)}
+      onMouseLeave={endPromptScroll}
       onMouseMove={moveScroll}
       className={styles.container}
       style={{
@@ -210,7 +232,10 @@ export default function PhoneCarousel({ selfie }) {
             <div
               onMouseDown={() => setIsScrollActive(true)}
               className={styles.scrollBar}
-              style={{ transform: `translate(${scrollBarPosition}px, 0px)` }}
+              style={{
+                transform: `translate(${scrollBarPosition}px, 0px)`,
+                transition: isScrollActive && "none",
+              }}
             ></div>
           </div>
         </div>
