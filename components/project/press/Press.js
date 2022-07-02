@@ -129,7 +129,7 @@ export default function Press({ about, projectName, logoCount }) {
           {projectName === "about" && <LogoCarousel sources={aboutData} />}
         </div>
       </div>
-      {logoCount > 2 && vw > 1180 && (
+      {logoCount > 2 && (
         <div className={styles.scrollerContainer}>
           <div className={styles.scrollBarHolder}>
             <div

@@ -7,6 +7,8 @@ import Collage from "../components/project/Collage";
 import MobileCarousel from "../components/project/MobileCarousel";
 import Press from "../components/project/press/Press";
 import Head from "next/head";
+import MobileDetails from "../components/project/MobileDetails";
+import MobilePageBreak from "../components/project/MobilePageBreak";
 
 export default function aColorfulLife() {
   return (
@@ -15,6 +17,7 @@ export default function aColorfulLife() {
         <title>A Colourful Life</title>
       </Head>
       <Details project={projects[6]} />
+      <MobileDetails videoUrl={projects[6].videoUrl} project={projects[6]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>
         <VideoPlayer url={projects[6].videoUrl} />
@@ -22,6 +25,7 @@ export default function aColorfulLife() {
         <FullViewPicture contain={true} url={projects[6].fullViewPictureTwo} />
         <Collage project="colorful life" images={projects[6].collageImages} />
         <MobileCarousel images={projects[6].mobileCarousel} />
+        <MobilePageBreak />
         <Press logoCount={7} projectName={"colorful life"} />
         <Footer projectPage={true} />
       </div>

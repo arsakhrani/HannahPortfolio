@@ -1,15 +1,8 @@
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./MobileCarousel.module.css";
 
 export default function MobileCarousel({ images }) {
-  const [viewWidth, setViewWidth] = useState(0);
-
-  useEffect(() => {
-    setViewWidth(window.innerWidth);
-  }, []);
-
-  return viewWidth < 900 ? (
+  return (
     <div className={styles.container}>
       <div className={styles.galleryContainer}>
         {images.map((image) => (
@@ -26,5 +19,5 @@ export default function MobileCarousel({ images }) {
         ))}
       </div>
     </div>
-  ) : null;
+  );
 }

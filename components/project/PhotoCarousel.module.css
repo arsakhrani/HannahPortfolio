@@ -96,6 +96,10 @@
     overflow-x: auto;
   }
 
+  .scrollBarContainer {
+    display: none;
+  }
+
   .imageContainer {
     width: 40vw;
     height: 40vw;
@@ -104,8 +108,8 @@
 
 @media (max-width: 500px) {
   .imageContainer {
-    width: 80vw;
-    height: 80vw;
+    width: 65vw;
+    height: 65vw;
   }
 
   .headerContainer {
@@ -113,6 +117,6 @@
   }
 
   .container {
-    height: 75vh;
+    height: 55vh;
   }
 }

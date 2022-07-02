@@ -103,6 +103,14 @@
   .container {
     overflow-x: auto;
   }
+
+  .scrollerContainer {
+    display: none;
+  }
+
+  .scrollableArea {
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 900px) {

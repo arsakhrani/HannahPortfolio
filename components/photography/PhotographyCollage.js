@@ -30,7 +30,6 @@ export default function PhotographyCollage({ section }) {
     <div
       style={{
         backgroundColor: section === "surf" && "#f3f1ed",
-        height: section === "food" && "150vh",
       }}
       className={styles.container}
     >

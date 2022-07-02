@@ -40,32 +40,7 @@
 }
 
 @media (max-width: 900px) {
-  .gridContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "company"
-      "links"
-      "brief";
-  }
-
-  .linkContainer {
-    border-bottom: 2px solid black;
-    margin-bottom: 1.4em;
-  }
-
   .container {
-    border-top: 2px solid black;
-    min-height: auto;
-  }
-}
-
-@media (max-width: 400px) {
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .container {
-    padding: 1.5rem 1.5rem;
+    display: none;
   }
 }

@@ -35,3 +35,20 @@
   position: absolute;
   top: 0;
 }
+
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+  }
+
+  .dividerOne {
+    position: relative;
+    height: 30vh;
+  }
+
+  .dividerTwo {
+    position: relative;
+    height: 30vh;
+    margin-top: 2vw;
+  }
+}

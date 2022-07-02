@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  right: 1.6rem;
+  width: 100vw;
+  height: 2rem;
+  background-color: #f3f1ed;
+}
+
+@media (min-width: 1180px) {
+  .container {
+    display: none;
+  }
+}

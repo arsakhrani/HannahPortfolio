@@ -6,6 +6,8 @@ import FullViewPicture from "../components/project/FullViewPicture";
 import Press from "../components/project/press/Press";
 import PhoneCarousel from "../components/project/PhoneCarousel";
 import Head from "next/head";
+import MobileDetails from "../components/project/MobileDetails";
+import MobilePageBreak from "../components/project/MobilePageBreak";
 
 export default function everyValentinesDay() {
   return (
@@ -14,6 +16,7 @@ export default function everyValentinesDay() {
         <title>Every Valentine{"'"}s Day</title>
       </Head>
       <Details project={projects[5]} />
+      <MobileDetails project={projects[5]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>
         <VideoAndQuote
@@ -22,6 +25,7 @@ export default function everyValentinesDay() {
         />
         <FullViewPicture url={projects[5].fullViewPicture} />
         <PhoneCarousel />
+        <MobilePageBreak />
         <Press logoCount={3} projectName={"valentines"} />
         <Footer projectPage={true} />
       </div>

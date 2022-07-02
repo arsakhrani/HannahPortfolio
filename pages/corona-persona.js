@@ -7,6 +7,7 @@ import SketchAndSketch from "../components/project/SketchAndSketch";
 import SketchCarousel from "../components/project/SketchCarousel";
 import FullSizeCarousel from "../components/project/FullSizeCarousel";
 import Head from "next/head";
+import MobileDetails from "../components/project/MobileDetails";
 
 export default function coronaPersona() {
   return (
@@ -15,6 +16,7 @@ export default function coronaPersona() {
         <title>Corona Persona</title>
       </Head>
       <Details project={projects[3]} />
+      <MobileDetails videoUrl={projects[3].videoUrl} project={projects[3]} />
       <Footer projectPage={true} detailsArea={true} />
       <div>
         <VideoPlayer url={projects[3].videoUrl} />

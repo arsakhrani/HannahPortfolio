@@ -81,20 +81,18 @@ export default function PhotoCarousel({ about, photos }) {
           </div>
         ))}
       </div>
-      {viewWidth > 1180 && (
-        <div className={styles.scrollBarContainer}>
-          <div className={styles.scrollBarHolder}>
-            <div
-              onMouseDown={() => setIsScrollActive(true)}
-              className={styles.scrollBar}
-              style={{
-                transform: `translate(${scrollBarPosition}px, 0px)`,
-                transition: isScrollActive && "none",
-              }}
-            ></div>
-          </div>
+      <div className={styles.scrollBarContainer}>
+        <div className={styles.scrollBarHolder}>
+          <div
+            onMouseDown={() => setIsScrollActive(true)}
+            className={styles.scrollBar}
+            style={{
+              transform: `translate(${scrollBarPosition}px, 0px)`,
+              transition: isScrollActive && "none",
+            }}
+          ></div>
         </div>
-      )}
+      </div>
       {about && (
         <a
           href="https://www.instagram.com/hannahcunny25/?hl=en"

@@ -38,3 +38,43 @@
 .linkText {
   padding-left: 1em;
 }
+
+@media (max-width: 900px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "company"
+      "links"
+      "brief";
+  }
+
+  .linkContainer {
+    border-bottom: 2px solid black;
+    padding-bottom: 1.4rem;
+    margin-bottom: 1.4em;
+  }
+
+  .linkText {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    border-top: 2px solid black;
+    height: auto;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 1.5rem 1.5rem;
+  }
+}

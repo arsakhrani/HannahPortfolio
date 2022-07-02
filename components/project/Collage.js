@@ -12,10 +12,8 @@ export default function Collage({ images, project }) {
   const [imageThreeWidth, setImageThreeWidth] = useState(0);
   const [imageFourWidth, setImageFourWidth] = useState(0);
   const [style, setStyle] = useState({});
-  const [vw, setVw] = useState(0);
 
   useEffect(() => {
-    setVw(window.innerWidth);
     const coldWaterStyle = {
       imageOne: {
         left: "2rem",
@@ -87,7 +85,7 @@ export default function Collage({ images, project }) {
       setStyle(issWieDuBistStyle);
   }, [imageOneWidth, imageFourWidth, project]);
 
-  return vw > 1099 ? (
+  return (
     <div className={styles.container}>
       <div>
         <div style={style.imageOne} className={styles.imageOne}>
@@ -140,5 +138,5 @@ export default function Collage({ images, project }) {
         </div>
       </div>
     </div>
-  ) : null;
+  );
 }

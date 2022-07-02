@@ -1,0 +1,62 @@
+.container {
+  padding: 3rem 3rem;
+  min-height: 92vh;
+  border-top: 2px solid black;
+  min-height: auto;
+}
+
+.title {
+  font-size: 4.5rem;
+}
+
+.videoContainer {
+  position: relative;
+  right: 3rem;
+}
+
+.accordionContainer {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+  transition: max-height ease 0.2s;
+}
+
+.companyText {
+  font-size: 1.4rem;
+  margin-top: 0.5em;
+}
+
+.link {
+  margin-bottom: 1.5em;
+  font-family: "Krona One", sans-serif;
+}
+
+.linkText {
+  padding-left: 1em;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .videoContainer {
+    right: 1.5rem;
+  }
+}

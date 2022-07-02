@@ -4,6 +4,7 @@ import AboutDetails from "../components/about/AboutDetails";
 import PhotoCarousel from "../components/project/PhotoCarousel";
 import { aboutMeData } from "../data/aboutMe";
 import Head from "next/head";
+import MobilePageBreak from "../components/project/MobilePageBreak";
 
 export default function about() {
   return (
@@ -16,6 +17,7 @@ export default function about() {
       <div>
         <Press about={true} projectName={"about"} logoCount={7} />
         <PhotoCarousel photos={aboutMeData.photoCarousel} about={true} />
+        <MobilePageBreak />
       </div>
     </div>
   );

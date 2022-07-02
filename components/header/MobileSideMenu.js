@@ -14,6 +14,9 @@ export default function MobileSideMenu({ visible, closeSideMenu }) {
       <nav className={styles.navContainer}>
         <ul className={styles.linkContainer}>
           <li onClick={() => closeSideMenu()} className={styles.link}>
+            <Link href={"/"}>portfolio</Link>
+          </li>
+          <li onClick={() => closeSideMenu()} className={styles.link}>
             <Link href={"/about"}>about</Link>
           </li>
           <li onClick={() => closeSideMenu()} className={styles.link}>

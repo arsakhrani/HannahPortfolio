@@ -41,9 +41,16 @@ export default function Home() {
           <div>
             {projects.map((project, i) => (
               <div
-                style={{ left: (vw > 900 ? 135 : 450) * i, zIndex: 10 - i }}
+                style={{
+                  left: vw > 710 ? (vw > 900 ? 135 : 450) * i : "0",
+                  zIndex: 10 - i,
+                }}
                 className={
-                  i + 1 > index && vw > 900 ? styles.cardPush : styles.card
+                  vw > 710
+                    ? i + 1 > index && vw > 900
+                      ? styles.cardPush
+                      : styles.card
+                    : styles.card
                 }
                 key={i}
               >

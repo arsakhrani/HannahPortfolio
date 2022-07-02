@@ -182,20 +182,18 @@ export default function SketchCarousel() {
           />
         </div>
       </div>
-      {viewWidth > 1180 && (
-        <div className={styles.scrollerContainer}>
-          <div className={styles.scrollBarHolder}>
-            <div
-              onMouseDown={() => setIsScrollActive(true)}
-              className={styles.scrollBar}
-              style={{
-                transform: `translate(${scrollBarPosition}px, 0px)`,
-                transition: isScrollActive && "none",
-              }}
-            ></div>
-          </div>
+      <div className={styles.scrollerContainer}>
+        <div className={styles.scrollBarHolder}>
+          <div
+            onMouseDown={() => setIsScrollActive(true)}
+            className={styles.scrollBar}
+            style={{
+              transform: `translate(${scrollBarPosition}px, 0px)`,
+              transition: isScrollActive && "none",
+            }}
+          ></div>
         </div>
-      )}
+      </div>
     </div>
   );
 }
