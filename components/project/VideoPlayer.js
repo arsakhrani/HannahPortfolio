@@ -16,6 +16,7 @@ export default function VideoPlayer({ url, details }) {
         className={styles.container}
       >
         <video
+          preload="metadata"
           onMouseOver={() => setShowControls(true)}
           onMouseLeave={() => setShowControls(false)}
           controls={showControls}
