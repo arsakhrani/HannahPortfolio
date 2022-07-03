@@ -13,7 +13,7 @@
   cursor: pointer;
   z-index: 4;
   justify-self: center;
-  background: white;
+  /* background: white; */
 }
 
 @media (max-width: 1180px) {
