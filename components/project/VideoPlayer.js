@@ -20,7 +20,7 @@ export default function VideoPlayer({ url, details }) {
           playsInline
           onMouseOver={() => setShowControls(true)}
           onMouseLeave={() => setShowControls(false)}
-          controls={showControls}
+          controls={showControls || details}
           src={`${url}#t=0.001`}
           className={styles.videoPlayer}
         />

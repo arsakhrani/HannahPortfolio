@@ -13,7 +13,7 @@ const projects = [
       "https://res.cloudinary.com/daolun2ab/image/upload/v1652009810/iss-wie-du-bist/Crowd_Farming_Header_Right_qg4yx7.png",
     brief: {
       textOne:
-        "Launching a new brand in a new country is always tough, but add in the fact we had 22 days from concept sign off to the first asset supply date, it was no easy feet.",
+        "Launching a new brand in a new country is always tough, but add in the fact we had 22 days from concept sign off to the first asset supply date, it was no easy feat.",
       textTwo:
         "We were tasked to launch Crowd Farming to the German audience - with a focus on shifting the seasonal Avocado and Orange produce the farms had whilst the campaign was live. We had a full 360 campaign to create; 30’ TV spot, static and moving OOH, and static and moving social media assets.",
     },

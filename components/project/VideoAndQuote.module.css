@@ -27,10 +27,11 @@
 @media (max-width: 900px) {
   .container {
     height: 50vh;
+    grid-template-columns: 1fr;
   }
 
   .quoteContainer {
-    height: 40vh;
+    display: none;
   }
 
   .videoPlayer {

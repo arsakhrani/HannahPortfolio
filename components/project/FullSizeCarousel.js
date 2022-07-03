@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./FullSizeCarousel.module.css";
+import { useSwipeable } from "react-swipeable";
 
 export default function FullSizeCarousel({ goodMorning }) {
   const [position, setPosition] = useState(0);
@@ -11,8 +12,17 @@ export default function FullSizeCarousel({ goodMorning }) {
     setPosition(selector - 1);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      position < (goodMorning ? 3 : 1) && setPosition(position + 1);
+    },
+    onSwipedRight: () => {
+      setPosition(position - 1);
+    },
+  });
+
   return (
-    <div className={styles.outerContainer}>
+    <div {...handlers} className={styles.outerContainer}>
       <div
         style={{ transform: `translate(-${position * 100}vw, 0px)` }}
         className={styles.container}

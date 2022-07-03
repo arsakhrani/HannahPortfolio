@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSwipeable } from "react-swipeable";
 import styles from "./GalleryAndText.module.css";
 
 export default function GalleryAndText() {
@@ -27,9 +28,18 @@ export default function GalleryAndText() {
       );
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      selectedDot < 4 && changeSelection(selectedDot + 1);
+    },
+    onSwipedRight: () => {
+      selectedDot > 1 ** changeSelection(selectedDot - 1);
+    },
+  });
+
   return (
     <div className={styles.container}>
-      <div className={styles.galleryContainer}>
+      <div {...handlers} className={styles.galleryContainer}>
         <video
           preload="auto"
           src={videoSource}

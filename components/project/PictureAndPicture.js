@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { useSwipeable } from "react-swipeable";
 import styles from "./PictureAndPicture.module.css";
 
 export default function PictureAndPicture({
@@ -32,6 +33,15 @@ export default function PictureAndPicture({
       );
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      ownGoodFood && selectedDot < 4 && changeSelection(selectedDot + 1);
+    },
+    onSwipedRight: () => {
+      ownGoodFood && selectedDot > 1 ** changeSelection(selectedDot - 1);
+    },
+  });
+
   return (
     <div className={styles.container}>
       <div className={styles.bigPictureContainer}>
@@ -47,7 +57,7 @@ export default function PictureAndPicture({
           }
         />
       </div>
-      <div className={styles.smallPictureContainer}>
+      <div {...handlers} className={styles.smallPictureContainer}>
         <Image
           draggable={false}
           objectFit={"cover"}
