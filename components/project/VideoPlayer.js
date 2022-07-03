@@ -21,7 +21,7 @@ export default function VideoPlayer({ url, details }) {
           onMouseOver={() => setShowControls(true)}
           onMouseLeave={() => setShowControls(false)}
           controls={showControls}
-          src={`${url}#t=0.001`}
+          src={url}
           className={styles.videoPlayer}
         />
       </div>
