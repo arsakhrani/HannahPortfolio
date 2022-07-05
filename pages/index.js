@@ -11,6 +11,7 @@ export default function Home() {
   const [vw, setVw] = useState(0);
 
   useEffect(() => {
+    window.onresize = () => location.reload();
     setVw(window.innerWidth);
   }, []);
 

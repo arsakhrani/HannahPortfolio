@@ -59,6 +59,8 @@ export default function Collage({ images, project }) {
       },
     };
 
+    window.onresize = () => location.reload();
+
     project === "cold water" && setImageOneWidth(window.innerWidth * 0.3);
     project === "colorful life" && setImageOneWidth(window.innerWidth * 0.22);
     (project === "iss wie du bist" || project === "own good food") &&
@@ -127,6 +129,7 @@ export default function Collage({ images, project }) {
         <div className={styles.imageFour}>
           <Image
             draggable={false}
+            priority
             onLoadingComplete={({ naturalWidth, naturalHeight }) =>
               setImageFourRatio(naturalWidth / naturalHeight)
             }
