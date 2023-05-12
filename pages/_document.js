@@ -17,13 +17,13 @@ class MyDocument extends Document {
           <meta property="og:type" content="Website" />
           <meta
             property="og:image"
-            content="https://res.cloudinary.com/di85rflof/image/upload/v1616966795/Screenshot_2021-03-28_at_23.26.29_ak92y5.png"
+            content="https://res.cloudinary.com/daolun2ab/image/upload/v1683897514/Screenshot_2023-05-12_at_14.17.22_mw3ohn.png"
           />
           <meta
             property="og:description"
             content="Hannah's Art Director Portfolio"
           />
-          <meta property="og:url" content="www.hannahbannana.com" />
+          <meta property="og:url" content="www.thingsbyhannah.com" />
           <meta name="author" content="Ashneil Sakhrani" />
           <link rel="apple-touch-icon" href="/favicon.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
