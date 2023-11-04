@@ -19,8 +19,8 @@ export default function ContactDetailsText({ textType }) {
   if (textType === "mobile") {
     return (
       <div className={styles.textContainer}>
-        <a href="tel:+4917642991200" className={styles.briefText}>
-          +49 17642 991200
+        <a href="tel:+351933504671" className={styles.briefText}>
+          +351 933 504 671
         </a>
       </div>
     );
