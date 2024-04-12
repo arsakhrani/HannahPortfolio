@@ -8,9 +8,14 @@ export default function Header() {
         <a className={styles.changeColor}>Contact</a>
       </Link>
       <Link href="/">HannaH</Link>
-      <Link href="/photography">
-        <a className={styles.changeColor}>Photography</a>
-      </Link>
+      <a
+        href="https://www.wearefloatingheads.com"
+        target="_blank"
+        rel="noreferrer"
+        className={styles.changeColor}
+      >
+        Photography
+      </a>
     </header>
   );
 }

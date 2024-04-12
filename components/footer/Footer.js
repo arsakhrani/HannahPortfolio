@@ -42,7 +42,7 @@ export default function Footer({ projectPage, detailsArea }) {
         className={styles.changeColor}
         target="_blank"
         rel="noreferrer"
-        href="https://res.cloudinary.com/daolun2ab/image/upload/fl_attachment:Hannah_Cunningham_cv/v1659520090/220208_Hannah_CV_V03_fufzue.pdf"
+        href="https://res.cloudinary.com/daolun2ab/image/upload/fl_attachment:Hannah_Sakhrani_cv/v1712842381/20240406_Hannah_CV_V07_xrizax.pdf"
         download
       >
         CV

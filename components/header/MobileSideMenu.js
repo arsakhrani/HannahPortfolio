@@ -27,14 +27,21 @@ export default function MobileSideMenu({ visible, closeSideMenu }) {
               className={styles.changeColor}
               target="_blank"
               rel="noreferrer"
-              href="https://res.cloudinary.com/daolun2ab/image/upload/fl_attachment:Hannah_Cunningham_cv/v1649421102/220208_Hannah_CV_V02_bkgsex.pdf"
+              href="https://res.cloudinary.com/daolun2ab/image/upload/fl_attachment:Hannah_Sakhrani_cv/v1712842381/20240406_Hannah_CV_V07_xrizax.pdf"
               download
             >
               cv
             </a>
           </li>
           <li onClick={() => closeSideMenu()} className={styles.link}>
-            <Link href={"/photography"}>photography</Link>
+            <a
+              href="https://www.wearefloatingheads.com"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.changeColor}
+            >
+              photography
+            </a>
           </li>
         </ul>
       </nav>
