@@ -68,6 +68,11 @@ export default function Details({ project, wholey }) {
           </div>
           {project.title !== "COLD WATER" &&
             project.title !== "EVERY VALENTINE'S DAY" &&
+            project.title !== "OH LA MOMENTS" &&
+            project.title !== "CALL ME NUTS" &&
+            project.title !== "CHROME FÜR DEIN PHONE" &&
+            project.title !== "FLOW UNINTERRUPTED" &&
+            project.title !== "DESIGNS OF THE YEAR" &&
             project.title !== "ISS WIE DU BIST" && (
               <div className={styles.link}>
                 <span

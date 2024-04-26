@@ -22,7 +22,10 @@ export default function goodMornings() {
         <PhotoCarousel photos={projects[7].photoCarousel} />
         <MobilePageBreak />
         <GalleryAndText />
-        <FullSizeCarousel goodMorning={true} />
+        <FullSizeCarousel
+          title={"DESIGN"}
+          photos={projects[7].fullSizeCarousel}
+        />
         <Press logoCount={3} projectName={"good mornings"} />
         <Footer projectPage={true} />
       </div>

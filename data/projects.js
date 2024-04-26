@@ -166,6 +166,10 @@ const projects = [
       textOne:
         "Once again, I concepted and led the design and visuals on the project, later taking the reigns on outsourcing some designing to the juniors due to a clash in project timings (Corona Persona VS Crowd Farming) as a way to ensure the project was completed for the live event. Again, my flare and design ideas can be felt across every asset as I oversaw everything for the campaign from start to finish.",
     },
+    fullSizeCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1645462091/Midi%20Corona%20Persona/Mockup_Study_FrontCover_V02_hc_ydpfcf.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1645462091/Midi%20Corona%20Persona/Midi_MockUp_CloseUp_V02_hc_enjkpl.jpg",
+    ],
   },
   {
     title: "OWN GOOD FOOD",
@@ -335,6 +339,12 @@ const projects = [
       textThree:
         "My love for photography has continued and I am now a contributor to Getty Images, and take freelance work in my spare time - my site can be seen ",
     },
+    fullSizeCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1643979756/wholey/Design/Acai_1_mov9vn.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1649420775/wholey/Design/Screenshot_2022-04-08_at_14.17_tpa3qs.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1645461876/wholey/Design/Book_Mockup_V04_hc_nws7ix.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1645461876/wholey/Design/Wholey_Hot_Shot_Group_2_pcb3wu.jpg",
+    ],
     photoCarousel: [
       "https://res.cloudinary.com/daolun2ab/image/upload/v1643912552/wholey/01_DSC_5037_dlbdea.jpg",
       "https://res.cloudinary.com/daolun2ab/image/upload/v1643979706/wholey/02_SA702479_copy_mxguox.jpg",
@@ -351,6 +361,166 @@ const projects = [
       "https://res.cloudinary.com/daolun2ab/image/upload/v1643979468/wholey/14_DSC_6355-Edit_pzohef.jpg",
       "https://res.cloudinary.com/daolun2ab/image/upload/v1643979465/wholey/15_DSC_4927_s3rpy3.jpg",
       "https://res.cloudinary.com/daolun2ab/image/upload/v1643979465/wholey/13_DSC_6266-Edit-3_rrwtkw.jpg",
+    ],
+  },
+  {
+    title: "OH LA MOMENTS",
+    company: "Oh La Laqua",
+    url: "oh-la-moments",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052652/oh%20la%20laqua/DSC_4893_ove1tv.jpg",
+    fullViewPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052652/oh%20la%20laqua/DSC_4893_ove1tv.jpg",
+    brief: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    idea: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    success: {},
+    role: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    bigPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052644/oh%20la%20laqua/DSC_4086_smoqs5.jpg",
+    smallPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052646/oh%20la%20laqua/DSC_2701_yzdwsv.jpg",
+    collageImages: {
+      urlOne:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1714052639/oh%20la%20laqua/IMG_3134_rfsa6m.jpg",
+      urlTwo:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1714052649/oh%20la%20laqua/DSC_4048_estluc.jpg",
+      urlThree:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1714052641/oh%20la%20laqua/DSC_2833_nusvan.jpg",
+      urlFour:
+        "https://res.cloudinary.com/daolun2ab/image/upload/v1714052627/oh%20la%20laqua/IMG_3065_kv0bf4.jpg",
+    },
+    mobileCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052639/oh%20la%20laqua/IMG_3134_rfsa6m.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052649/oh%20la%20laqua/DSC_4048_estluc.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052641/oh%20la%20laqua/DSC_2833_nusvan.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052627/oh%20la%20laqua/IMG_3065_kv0bf4.jpg",
+    ],
+  },
+  {
+    title: "CALL ME NUTS",
+    company: "Treatfuls",
+    url: "call-me-nuts",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048003/Treatfuls/design%20header/DSC_6798_nvyxqk.jpg",
+    brief: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    idea: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    success: {},
+    role: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    fullSizeCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048003/Treatfuls/design%20header/DSC_6798_nvyxqk.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048002/Treatfuls/design%20header/DSC_6818_i7xuht.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048001/Treatfuls/design%20header/DSC_6993-Edit_nsoo8v.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048000/Treatfuls/design%20header/DSC_7150_fj8up7.jpg",
+    ],
+    bigPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714052125/Treatfuls/ball_products_3_hu7omt.gif",
+    smallPicture:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714050687/Treatfuls/DSC_4763_xjvjxo.jpg",
+    photoCarousel: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048980/Treatfuls/photography/DSC_7246_bgqafp.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048979/Treatfuls/photography/DSC_7276_em8ogb.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048977/Treatfuls/photography/DSC_7469_ise1e2.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048976/Treatfuls/photography/DSC_6556_hufa7v.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048975/Treatfuls/photography/DSC_6827_elxq51.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048974/Treatfuls/photography/DSC_7504_ejqok3.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048973/Treatfuls/photography/DSC_7185-Edit_rn8ywi.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714048972/Treatfuls/photography/DSC_6841_bmx8rl.jpg",
+    ],
+  },
+  {
+    title: "CHROME FÜR DEIN PHONE",
+    company: "Google",
+    url: "chrome-fur-dein-phone",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714071415/No%20place%20like%20Chrome/no-place-like-chrome_q81vkl.jpg",
+    brief: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    idea: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    success: {},
+    role: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    videoUrls: [
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1714052815/No%20place%20like%20Chrome/Malware_15s_BAU_v5sc3u.mp4",
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1714052812/No%20place%20like%20Chrome/Passwords_15s_BAU_bkltvp.mp4",
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1714052748/No%20place%20like%20Chrome/Autofill_15s_BAU_rklzli.mp4",
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1714052818/No%20place%20like%20Chrome/X-Device_15s_BAU_nuunk6.mp4",
+    ],
+  },
+  {
+    title: "FLOW UNINTERRUPTED",
+    company: "Nexium Control",
+    url: "flow-uninterrupted",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714071562/Nexium/Screenshot_2024-04-25_at_19.57.46_et0uue.png",
+    brief: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    idea: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    success: {},
+    role: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    videoUrl:
+      "https://res.cloudinary.com/daolun2ab/video/upload/v1714053093/Nexium/239599_LEO_Nexium_30_UK_FL009_Alt1_ukxz9c.mov",
+  },
+  {
+    title: "DESIGNS OF THE YEAR",
+    company: "Design Museum",
+    url: "designs-of-the-year",
+    bannerImage:
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053437/Design%20Museum/DOTY/Screenshot_2020-01-31_at_14.36.04_pktwlm.png",
+    brief: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    idea: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    success: {},
+    role: {
+      textOne:
+        "Hold your horses, I'm an Art Director so words take me more time...but there will be more info coming soon!",
+    },
+    featureImages: [
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053589/Design%20Museum/DOTY/poster_iyduar.gif",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053583/Design%20Museum/DOTY/Screenshot_2020-02-09_at_15.36.02_dgp0k3.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053453/Design%20Museum/DOTY/yotube-2_kb0cqs.jpg",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053447/Design%20Museum/DOTY/Screenshot_2020-02-01_at_15.42.59_bbne0c.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053441/Design%20Museum/DOTY/Screenshot_2020-01-31_at_14.36.21_rjpdin.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053437/Design%20Museum/DOTY/Screenshot_2020-01-31_at_14.36.04_pktwlm.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053432/Design%20Museum/DOTY/Screenshot_2020-01-31_at_14.36.11_eooeqx.png",
+      "https://res.cloudinary.com/daolun2ab/image/upload/v1714053424/Design%20Museum/DOTY/Screenshot_2020-01-30_at_15.30.06_ojeedh.png",
     ],
   },
 ];

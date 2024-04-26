@@ -1,8 +1,19 @@
 .textContainer {
-  grid-area: brief;
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  padding-left: 6rem;
+  padding-right: 12rem;
 }
 
 .briefText {
-  font-size: 1.4rem;
   margin-bottom: 1.5em;
+}
+
+@media (max-width: 680px) {
+  .textContainer {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    font-size: 2rem;
+  }
 }

@@ -95,6 +95,11 @@ export default function MobileDetails({ project, wholey, videoUrl }) {
       </div>
       {project.title !== "COLD WATER" &&
         project.title !== "EVERY VALENTINE'S DAY" &&
+        project.title !== "OH LA MOMENTS" &&
+        project.title !== "CHROME FÜR DEIN PHONE" &&
+        project.title !== "FLOW UNINTERRUPTED" &&
+        project.title !== "DESIGNS OF THE YEAR" &&
+        project.title !== "CALL ME NUTS" &&
         project.title !== "ISS WIE DU BIST" && (
           <div>
             <div className={styles.link}>

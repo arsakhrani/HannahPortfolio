@@ -22,7 +22,7 @@ export default function coronaPersona() {
         <VideoPlayer url={projects[3].videoUrl} />
         <SketchAndSketch />
         <SketchCarousel />
-        <FullSizeCarousel />
+        <FullSizeCarousel photos={projects[3].fullSizeCarousel} />
         <Press logoCount={4} projectName={"corona persona"} />
         <Footer projectPage={true} />
       </div>

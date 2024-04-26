@@ -59,30 +59,50 @@ export default function Collage({ images, project }) {
       },
     };
 
+    const ohLaMomentsStyle = {
+      imageOne: {
+        left: "5rem",
+        top: "3rem",
+      },
+      imageTwo: {
+        bottom: "-9rem",
+        left: imageOneWidth + 85,
+      },
+      imageThree: {
+        right: imageFourWidth * 2,
+        top: "8rem",
+      },
+    };
+
     window.onresize = () => location.reload();
 
     project === "cold water" && setImageOneWidth(window.innerWidth * 0.3);
     project === "colorful life" && setImageOneWidth(window.innerWidth * 0.22);
+    project === "oh la moments" && setImageOneWidth(window.innerWidth * 0.17);
     (project === "iss wie du bist" || project === "own good food") &&
       setImageOneWidth(window.innerWidth * 0.2);
 
     project === "cold water" && setImageTwoWidth(window.innerWidth * 0.22);
     project === "colorful life" && setImageTwoWidth(window.innerWidth * 0.15);
+    project === "oh la moments" && setImageTwoWidth(window.innerWidth * 0.17);
     (project === "iss wie du bist" || project === "own good food") &&
       setImageTwoWidth(window.innerWidth * 0.15);
 
     project === "cold water" && setImageThreeWidth(window.innerWidth * 0.25);
     project === "colorful life" && setImageThreeWidth(window.innerWidth * 0.28);
+    project === "oh la moments" && setImageThreeWidth(window.innerWidth * 0.3);
     (project === "iss wie du bist" || project === "own good food") &&
       setImageThreeWidth(window.innerWidth * 0.28);
 
     project === "cold water" && setImageFourWidth(window.innerWidth * 0.22);
     project === "colorful life" && setImageFourWidth(window.innerWidth * 0.23);
+    project === "oh la moments" && setImageFourWidth(window.innerWidth * 0.17);
     (project === "iss wie du bist" || project === "own good food") &&
       setImageFourWidth(window.innerWidth * 0.21);
 
     project === "cold water" && setStyle(coldWaterStyle);
     project === "colorful life" && setStyle(colorfulLifeStyle);
+    project === "oh la moments" && setStyle(ohLaMomentsStyle);
     (project === "iss wie du bist" || project === "own good food") &&
       setStyle(issWieDuBistStyle);
   }, [imageOneWidth, imageFourWidth, project]);
